@@ -112,10 +112,24 @@ div.mainWrap>div.main>div.btns>div.btn{
     /* padding: 0 20px; */
     
 }
-div.mainWrap>div.main>div.btns>div.btn>i{}
-div.mainWrap>div.main>div.btns>div.btn>i:nth-child(3){}
+div.mainWrap>div.main>div.btns>div.btn>i{
+    display: block;
+    width: calc(100% / 5);
+    outline: 1px soild red;
+    float: left;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 20px;
+}
+div.mainWrap>div.main>div.btns>div.btn>i:nth-child(3){
+    text-align: right;
+    padding-right: 20px;
+}
 div.mainWrap>div.main>div.btns>div.btn>span{
-    margin: 0 20px;
+    display: block;
+    width: calc(100% / 5 * 3);
+    outline: 1px soild red;
+    float: left;
 }
 
 /* 컨텐츠 공통 */
@@ -204,8 +218,17 @@ div.cntWrap>div.content.cnt01>div.section>div.article{
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image{
     height: 200px;
     background-color: #ccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-size 5s ;
 }
-div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i1{}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i1{
+    background-image: url('../pic01.jpg');
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i1:hover{
+    background-size: 200%;
+}
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i2{}
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i3{}
 div.cntWrap>div.content.cnt01>div.section>div.article>div.texts{
