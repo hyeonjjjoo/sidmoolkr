@@ -1,0 +1,233 @@
+/* 헤더 */
+div.hdrWrap>div.header{
+  width: 90%;
+}
+div.hdrWrap>div.header>h1{
+  text-align: right;
+  width: calc(100% / 4 * 3);
+  padding-right: 20px;
+}
+/* 배너1 */
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.image{
+  height: 200px;
+}
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts{
+  margin-top: -80px;
+}
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft{
+  padding-right: 50px;
+}
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft>h2{
+  font-size: 35px;
+  line-height: 40px;
+}
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft>h3{
+  font-size: 20px;
+  line-height: 20px;
+  height: 40px;
+  margin-top: 35px;
+  overflow: hidden;
+}
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.note>div.texts>h3{
+  font-size: 11px;
+}
+div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtRight{
+  margin-top: -40px;
+  width: calc(100% / 8 * 0.8 );
+}
+div.bnrWrap.bnrWrap01 > div.banner.bnr01 > div.note{
+  width: calc(100% / 4 * 2);
+  top: 220px;
+  right: calc(100% / 4 * 0.55);
+}
+
+
+div.cntWrap>div.content{
+  width: 80%;
+}
+div.cntWrap>div.content>div.section{
+  margin-top: 0px;
+}
+
+div.cntWrap>div.content>div.header>h2{
+  font-size: 20px;
+}
+div.cntWrap>div.content>div.header>h5{
+  font-size: 12px;
+  display: none;
+}
+
+/* 컨텐츠1 */
+div.cntWrap:nth-child(3){
+  margin-top: -100px;
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab{
+  height: 30px;
+  overflow: hidden;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li{
+  margin-right: 13px;
+  line-height: 20px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover::after{
+  top: -2px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight{
+  margin-top: 0px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.image{
+  height: 200px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>h3{
+  font-size: 12px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>h5{
+  font-size: 11px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>h5>br{
+  display: none;
+}
+div.cntWrap>div.content.cnt01>div.section>ul.paging{
+  min-width: calc(100% / 4 * 0.5);
+  width: calc(100% / 4 * 0.7);
+}
+
+/* 컨텐츠2 */
+div.cntWrap>div.content.cnt02>div.section>div.artLeft{
+  margin: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artLeft>h3{
+  font-size: 18px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artLeft>h5{
+  font-style: 15px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight{
+  margin-top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Left>div.image.i1{
+  height: 160px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Left>div.image.i2{
+  height: 110px;
+  top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Left>div.image.i3{
+  top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Left>div.texts{
+  font-size: 25px;
+  top: 5px;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Right>div.image.i4{
+  height: 160px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Right>div.image.i5{
+  height: 110px;
+  top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Right>div.image.i6{
+  top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Right>div.texts{
+  font-size: 25px;
+  top: 5px;
+}
+
+div.cntWrap>div.content.cnt02>ul.paging{
+  min-width: calc(100% / 4 * 0.5);
+  width: calc(100% / 4 * 0.7);
+  margin-top: 20px;
+}
+
+/* 컨텐츠3 */
+
+
+div.cntWrap>div.content.cnt03>div.section{
+  margin-top: 40px;
+}
+
+div.cntWrap>div.content.cnt03>div.header>ul.tab{
+  padding: 0;
+}
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li{
+  width: calc(100% / 5 - 12px);
+  margin: 0 6px;
+}
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image{
+  height: 50px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.image{
+  height: 200px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
+  padding: 0px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h5{
+  font-size: 11px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h4{
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h3{
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0px;
+}
+div.cntWrap>div.content.cnt03>div.section>ul.paging{
+  min-width: calc(100% / 4 * 0.9);
+  width: calc(100% / 4);
+}
+
+/* 배너3 */
+div.bnrWrap.bnrWrap03>div.banner.bnr03{
+  width: 90%;
+}
+div.bnrWrap.bnrWrap03>div.banner.bnr03>div.image{
+  width: 60%;
+  height: 200px;
+}
+div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts{
+  width: 40%;
+  height: 200px;
+  padding: 40px 20px 20px;
+}
+div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts>p:nth-child(2){
+  margin-top: 0px;
+}
+div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts>h5{
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 40px;
+}
+div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts>h5>i{
+  font-size: 18px;
+}
+
+/* 푸터 */
+div.ftrWrap>div.footer{
+  width: 90%;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+div.ftrWrap>div.footer>div.ftrLeft>ul.nav{
+  display: none;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h1{
+  margin: 0px;
+  font-size: 20px;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h4{
+  margin-top: 30px;
+  height: 20px;
+  overflow: hidden;
+}
+div.ftrWrap>div.footer>div.ftrRight{
+  margin-top: -50px;
+}
+div.ftrWrap>div.footer>div.ftrRight>i{
+  font-size: 20px;
+}
+

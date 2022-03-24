@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lora&family=Nanum+Gothic+Coding&family=Oooh+Baby&family=Roboto:wght@300&family=Work+Sans&display=swap');
+
+
+/* 헤더 */
+div.hdrWrap{
+  background-color: #9db691;
+  background-image: url('../images/hdr01.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+
+}
+div.hdrWrap>div.header{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 0 40px;
+  color: #fff;
+  text-shadow: 2px 2px 6px #868686;
+}
+
+div.hdrWrap:hover>div.header>ul.nav>li{
+  transition: text-shadow 0.5s;
+  text-shadow: 2px 2px 4px #ff754b;
+
+}
+
+div.hdrWrap>div.header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.hdrWrap>div.header>h1{
+  font-size: 35px;
+  line-height: 40px;
+  float: left;
+  text-transform: uppercase;
+  font-family: 'Lora';
+}
+div.hdrWrap>div.header>ul.nav{
+  float: right;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+div.hdrWrap>div.header>ul.nav>li{
+  float: left;
+  font-size: 25px;
+  line-height: 40px;
+  margin-right: 20px;
+  font-family: 'Work Sans';
+}
+div.hdrWrap>div.header>div.btn{
+  display: none;
+}
+
+
+/* 배너 */
+div.bnrWrap{
+  margin-top: 80px;
+}
+div.bnrWrap>div.banner::before{
+  width: 100vw;
+  height: 480px;
+  background-color: rgb(223, 146, 146);
+  content: '';
+  display: block;
+  margin-left: min(calc((100vw - 1080px) / -2),calc((100vw - 80vw) / -2));
+  position: absolute;
+  z-index: -1;
+  background-color: #9db691;
+  background-image: url('../images/sub_bnrbg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+div.bnrWrap>div.banner{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+div.bnrWrap>div.banner::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.bnrWrap>div.banner>div.texts{
+  width: 50%;
+  float: left;
+  padding: 70px calc(100% / 6 * 0.2);
+}
+div.bnrWrap>div.banner>div.texts>h2{
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: 'Lora';
+  font-weight: 700;
+
+}
+div.bnrWrap>div.banner>div.texts>p{
+  width: calc(100% / 6 * 4);
+  font-size: 16px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 30px;
+  font-family: 'Nanum Gothic Coding';
+  font-weight: 700;
+}
+div.bnrWrap>div.banner>div.texts>p:nth-child(2){
+  margin-top: 60px;
+}
+div.bnrWrap>div.banner>div.image{
+  width: 50%;
+  height: 520px;
+  float: left;
+  background-color: #000;
+  margin-top: 25px;
+  background-image: url('../images/sub_bnr1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.bnrWrap>div.banner>div.note{
+  width: calc(100% / 12 * 5.5);
+  position: absolute;
+  top: 440px;
+  right: calc(100% / 12 * 3.5);
+  height: 120px;
+  background-image: url('../images/sub_note.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 15px 20px 90px;
+}
+
+div.bnrWrap>div.banner>div.note>h4{
+  font-size: 14px;
+  line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Gowun Dodum';
+  text-align: right;
+  
+}
+
+
+/* 컨텐츠공통 */
+div.cntWrap{
+  margin-top: 80px;
+}
+div.cntWrap>div.content{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.cntWrap>div.content>div.header{
+  text-align: center;
+}
+div.cntWrap>div.content>div.header>h2{
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: 'Nanum Gothic Coding';
+}
+div.cntWrap>div.content>div.header>h5{
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
+  margin-top: 20px;
+  font-family: 'Nanum Gothic Coding';
+  font-weight: 700;
+  overflow: hidden;
+}
+div.cntWrap>div.content>div.section{
+  margin-top: 40px;
+}
+
+/* 컨텐츠1 */
+
+div.cntWrap:nth-child(3){
+  margin-top: 100px;
+}
+div.cntWrap>div.content.cnt01>div.section::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article{
+  width: calc(100% / 3 - 110px);
+  float: left;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article:nth-child(2){
+  margin: 0px calc(100% / 4 * 0.6);
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image{
+  height: 240px;
+  background-color: rgb(255, 255, 255);
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i1{
+   background-image: url('../images/sub_cnt1.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i2{
+   background-image: url('../images/sub_cnt2.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i3{
+   background-image: url('../images/sub_cnt3.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts{
+  text-align: center;
+  padding: 10px calc(100% / 3 * 0.5) 20px;
+  font-family: 'Work Sans';
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>h3{
+  font-size: 24px;
+  font-weight: 700;
+  left: 40px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>p{
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* 컨텐츠2 */
+
+div.cntWrap>div.content.cnt02>div.header>p{
+  margin: 0 auto;
+  width: calc(100% / 12 * 10);
+  line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 20px;
+  font-family: 'Gowun Dodum';
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article{
+  width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2){
+  margin-top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
+  width: 50%;
+  height: 360px;
+  background-color: rgb(255, 255, 255);
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i1{
+  float: left;
+  background-image: url('../images/sub_cnt4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i2{
+  float: right;
+  background-image: url('../images/sub_cnt5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+  width: 50%;
+  float: left;
+  padding: 280px 20px 0px ;
+  font-family: 'Nanum Gothic Coding';
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts:nth-last-child(3){
+  text-align: center;
+  outline: 2px solid red;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2)>div.texts{
+  float: right;
+  text-align: right;
+  margin: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2)>div.texts>p{
+  margin-left: auto;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{
+  width: calc(100% / 6 * 5.5);
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+  font-family: 'Gowun Dodum';
+}
+
+/* 컨텐츠3 */
+div.cntWrap>div.content.cnt03{}
+div.cntWrap>div.content.cnt03>div.header{}
+div.cntWrap>div.content.cnt03>div.section::after{
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
+div.cntWrap>div.content.cnt03>div.section div.article{
+  background-color: #fff;
+  width: calc(100% / 3 - 80px);
+  margin: 0px 40px;
+  height: 400px;
+  float: left;
+  box-shadow: 3px 3px 5px #999;
+  position: relative;
+  border-left: 2px solid rgb(230, 230, 230);
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(3)~div.article{
+  margin-top: 40px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article::after{
+  content: 'lorem ipsum';
+  display: block;
+  rotate: left 90deg;
+  font-size: 18px;
+  color: #999;
+  position: absolute;
+  z-index: 4;
+  top: 54px;
+  left: -43px;
+  transform: rotate(-90deg);
+  text-transform: capitalize;
+  font-family: 'Work Sans';
+  
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.image{
+  margin-left: auto;
+  width: calc(100% / 4 * 3.5);
+  height: 280px;
+  background-color: #000;
+}
+
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i1{
+   background-image: url('../images/sub_cnt6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i2{
+   background-image: url('../images/sub_cnt7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i3{
+   background-image: url('../images/sub_cnt8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i4{
+   background-image: url('../images/sub_cnt9.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i5{
+   background-image: url('../images/sub_cnt10.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i6{
+   background-image: url('../images/sub_cnt11.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
+  width: calc(100% / 4 * 3.5);
+  margin-left: auto;
+  padding: 5px 10px 40px 0px;
+  font-family: 'Nanum Gothic Coding';
+}
+
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h3{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>p{
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  font-family: 'Gowun Dodum';
+}
+
+/* 푸터 */
+div.ftrWrap{
+  margin-top: 80px;
+  background-color: #f4f4f4;
+  color: #666;
+}
+div.ftrWrap>div.footer{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px;
+}
+div.ftrWrap>div.footer::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div.ftrWrap>div.footer>div.ftrLeft{
+  width: calc(100% / 12 * 8);
+  float: left;
+}
+
+div.ftrWrap>div.footer>div.ftrLeft>ul.nav::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.ftrWrap>div.footer>div.ftrLeft>ul.nav>li{
+  float: left;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h1{
+  line-height: 40px;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-family: 'Lora';
+}
+div.ftrWrap>div.footer>div.ftrLeft>h4{
+  line-height: 20px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h4:nth-last-child(2){
+  margin-top: 20px;
+}
+div.ftrWrap>div.footer>div.ftrRight{
+  width: calc(100% / 12 * 3);
+  float: right;
+}
+div.ftrWrap>div.footer>div.ftrRight>i{
+  font-size: 30px;
+}
