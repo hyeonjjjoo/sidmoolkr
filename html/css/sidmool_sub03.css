@@ -67,16 +67,32 @@ div.mainWrap>div.main{
 div.mainWrap>div.main>div.image{
     width: 100%;
     height: 480px;
-    background-color: #000;
-    background-image: url('');
+    background-image: url('../images/sub3_main.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+div.mainWrap>div.main>div.image::after{
+    content: '';
+    width: calc(100% / 8 * 2.5 );
+    height: 480px;
+    background-image: url('../images/sub3_main2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: calc(100% / 12 * 1.5);
+
 }
 div.mainWrap>div.main>div.texts{
     color: #fff;
     margin-top: -480px;
     padding: 80px calc(100% / 12 * 0.8);
+    font-family: 'Work Sans';
     
 }
 div.mainWrap>div.main>div.texts>h2{
@@ -102,7 +118,7 @@ div.cntWrap>div.content{
 }
 
 /* 컨텐츠1 */
-div.cntWrap>div.content.cnt01{}
+
 div.cntWrap>div.content.cnt01>div.header{
     text-align: center;
 }
@@ -111,6 +127,8 @@ div.cntWrap>div.content.cnt01>div.header>h2{
     line-height: 80px;
     height: 80px;
     overflow: hidden;
+    font-style: italic;
+    font-family: 'Gowun Dodum';
 }
 div.cntWrap>div.content.cnt01>div.header>h3{
     font-size: 65px;
@@ -118,8 +136,9 @@ div.cntWrap>div.content.cnt01>div.header>h3{
     height: 50px;
     font-weight: 700;
     margin-top: 40px;
+    font-family: 'Lora';
 }
-div.cntWrap>div.content.cnt01>div.header>h3:nth-last-child(1){
+div.cntWrap>div.content.cnt01>div.header>h3:nth-last-child(2){
     color: #739270;
 }
 div.cntWrap>div.content.cnt01>div.header>p{
@@ -131,9 +150,10 @@ div.cntWrap>div.content.cnt01>div.header>p{
     font-weight: 700;
     margin: 0 auto;
     margin-top: 40px;
+    font-family: 'Nanum Gothic Coding';
     
 }
-div.cntWrap>div.content.cnt01>div.section{}
+
 div.cntWrap>div.content.cnt01>div.section>div.artTop{
     width: calc(100% / 12 * 8);
     margin: 0px calc(100% / 12 * 2);
@@ -152,18 +172,39 @@ div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article{
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image{
     margin: 0px 10px;
     height: 120px;
-    background-color: #000;
+   
 }
-div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i1{}
-div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i2{}
-div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i3{}
-div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i4{}
+div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i1{
+    background-image: url('../images/sub3_cnt1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i2{
+    background-image: url('../images/sub3_cnt2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i3{
+    background-image: url('../images/sub3_cnt3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i4{
+    background-image: url('../images/sub3_cnt4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts{
     margin-top: 10px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>p{
     font-size: 16px;
     text-align: center;
+    font-family: 'Gowun Dodum';
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm{
     margin-top: 40px;
@@ -193,29 +234,48 @@ div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image{
     width: calc(100% / 4 * 3.5);
     margin-right: auto;
     height: 480px;
-    background-color: #000;
+   
     position: relative;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i1{}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i2{}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i3{}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts{}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i1{
+    background-image: url('../images/sub3_cnt5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i2{
+    background-image: url('../images/sub3_cnt6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i3{
+    background-image: url('../images/sub3_cnt7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>h3{
     font-size: 16px;
     line-height: 40px;
     font-weight: 700;
+    font-family: 'Nanum Gothic Coding';
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>p{
+    width: calc(100% / 4 * 3);
     font-size: 14px;
     line-height: 20px;
     height: 40px;
     overflow: hidden;
     margin-top: 20px;
+    font-family: 'Gowun Dodum';
+    font-weight: 700;
 }
 
 /* 컨텐츠2 */
-div.cntWrap{}
-div.cntWrap>div.content.cnt02{}
+
+
 div.cntWrap>div.content.cnt02::after{
     content: '';
     display: block;
@@ -225,10 +285,12 @@ div.cntWrap>div.content.cnt02>div.texts{
     width: 50%;
     float: left;
     padding-right: calc(100% / 12);
+    font-family: 'Nanum Gothic Coding';
 }
 div.cntWrap>div.content.cnt02>div.texts>h3{
     font-size: 30px;
     line-height: 40px;
+    font-family: 'Gowun Dodum';
 }
 div.cntWrap>div.content.cnt02>div.texts>h2{
     font-size: 55px;
@@ -242,14 +304,20 @@ div.cntWrap>div.content.cnt02>div.texts>p{
     height: 180px;
     overflow: hidden;
     margin-top: 30px;
+    font-weight: 700;
+    font-family: 'Gowun Dodum';
     
 }
 div.cntWrap>div.content.cnt02>div.image{
     width: 50%;
     height: 400px;
     float: left;
-    background-color: #000;
+    
     font-weight: 700;
+    background-image: url('../images/sub3_cnt8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* 배너 */
@@ -261,10 +329,15 @@ div.bnrWrap>div.banner{
     max-width: 1080px;
     margin: 0 auto;
     position: relative;
+    font-family: 'Gowun Dodum';
 }
 div.bnrWrap>div.banner>div.image{
     height: 480px;
-    background-color: #000;
+    
+    background-image: url('../images/sub3_bnr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 div.bnrWrap>div.banner>div.texts{
     width: calc(100% / 12 * 3.5);
@@ -278,7 +351,7 @@ div.bnrWrap>div.banner>div.texts{
     
 }
 div.bnrWrap>div.banner>div.texts>div.text{
-    width: 98%;
+    width: 80%;
     float: left;
 }
 div.bnrWrap>div.banner>div.texts>div.text>h4{
@@ -301,6 +374,7 @@ div.bnrWrap>div.banner>div.texts>div.text>div.txt>h5{
     height: 20px;
     overflow: hidden;
     float: left;
+    margin-right: 5px;
 }
 div.bnrWrap>div.banner>div.texts>div.text>p{
     font-size: 12px;
@@ -310,17 +384,36 @@ div.bnrWrap>div.banner>div.texts>div.text>p{
 }
 div.bnrWrap>div.banner>div.texts>div.btn{
     float: right;
-    width: 2%;
+    width: 10%;
     position: absolute;
-    
+    font-size: 25px;
+    height: 30px;
+    margin: auto;
     top: 0;
     bottom: 0;
     right: 0;
 }
-div.bnrWrap>div.banner>div.texts>div.btn>i{}
-div.bnrWrap>div.banner>ul.paging{}
-div.bnrWrap>div.banner>ul.paging>li{}
-div.bnrWrap>div.banner>ul.paging>li.on{}
+
+div.bnrWrap>ul.paging{
+    min-width: calc(100% / 12 * 0.3);
+    width: calc(100% / 12 * 0.5);
+    margin: 0 auto;   
+    height: 8px;
+    margin-top: 20px;
+}
+div.bnrWrap>ul.paging>li{
+    width: 8px;
+    height: 8px;
+    background-color: #999;
+    float: left;
+    margin-right: 6px;
+    border-radius: 4px;
+    float: left;
+}
+div.bnrWrap>ul.paging>li.on{
+    width: 16px;
+    background: #000;
+}
 
 
 /* 푸터 */
