@@ -2,6 +2,9 @@
 
 
 /* 헤더 */
+body{
+  overflow-x: hidden;
+}
 div.hdrWrap{
   background-color: #9db691;
   background-image: url('../images/hdr01.jpg');
@@ -116,8 +119,9 @@ div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.im
   left: calc(100% / 9 * 0.5);
 }
 div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.bgBig{
-  left: calc(100% / 9 * 5.6);
+  right: 0;
 }
+ 
 
 
 /* 짝수번 아티클 */
@@ -343,14 +347,24 @@ div.cntWrap>div.content>div.section>div.article>div.images>div.image{
   z-index: 4;
 }
 div.cntWrap>div.content>div.section>div.article>div.images>div.bgBig{
-  /* width: calc(100% / 9 * 8.5); */
-  width: calc((100vw - 1080px) / 2 + 100%);
-  height: 480px;
-  background-color: #fce6de;
-  /* background-color: #c3bab3; */
+  width: calc(100% / 9 * 3.5);
   position: absolute;
   z-index: 2;
 }
+div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.bgBig>div.ovrGrid{
+  width: calc((100vw - 1080px) / 2 + 100%);
+  background-color: #fce6de;
+  height: 480px;
+  
+}
+div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images>div.bgBig>div.ovrGrid{
+  width: calc((100vw - 1080px) / 2 + 100%);
+  margin-left: calc((100vw - 1080px) / -2 );
+  background-color: #fce6de;
+  height: 480px;
+  
+}
+
 
 div.cntWrap>div.content>div.section>div.article>div.images>div.image.i1{
   background-image: url('../images/sub2_cntbg1.jpg');

@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="./css/sidmool_main.css">
   <link rel="stylesheet" href="./css/sidmool_main_tab.css" media="(max-width:1024px) and (min-width:0px)">
   <link rel="stylesheet" href="./css/sidmool_main_mobile.css" media="(max-width:420px) and (min-width:0px)">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/sidmool_main.js"></script>
 </head>
 <body>
   <!-- 헤더 -->
   <div class="hdrWrap">
     <div class="header">
-      <h1>sidmool</h1>
+      <h1><a href="./sidmool_main.html">sidmool</a></h1>
       <ul class="nav">
-        <li>brand</li>
-        <li>best&new</li>
-        <li>campaign</li>
+        <li><a href="./sidmool_sub03.html">brand</a></li>
+        <li><a href="./sidmool_sub02.html">best&new</a></li>
+        <li><a href="./sidmool_sub01.html">campaign</a></li>
       </ul>
       <div class="btn">
         <i class="xi-bars"></i>
@@ -60,7 +62,7 @@
       <div class="section">
         <div class="artLeft">
           <ul class="tab">
-            <li>&num;장벽 강화</li>
+            <li class="hLight">&num;장벽 강화</li>
             <li>&num;자극 진정</li>
             <li>&num;100시간 보습</li>
             <li>&num;저자극 탄력</li>
@@ -73,35 +75,130 @@
           </ul>            
         </div>
         <div class="artRight">
-          <div class="article">
-            <div class="image i1"></div>
-            <div class="texts">
-              <h3>휴먼 올리고 리페어 아이크림</h3>
-              <h5>깊은 주름/화이트닝 은행잎수34% <br> EGG이펙트/EFF이펙트</h5>
+          <div class="artGroup">
+            <div class="article">
+              <div class="image i1"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 아이크림</h3>
+                <h5>깊은 주름/화이트닝 은행잎수34% <br> EGG이펙트/EFF이펙트</h5>
+              </div>
             </div>
-          </div>
-          <div class="article">
-            <div class="image i2"></div>
-            <div class="texts">
-              <h3>휴먼 올리고 리페어 크림</h3>
-              <h5>10% 할인이벤트 산삼 배양근 <br> 피부속까지 진정</h5>
+            <div class="article">
+              <div class="image i2"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 크림</h3>
+                <h5>10% 할인이벤트 산삼 배양근 <br> 피부속까지 진정</h5>
+              </div>
             </div>
-          </div>
-          <div class="article">
-            <div class="image i3"></div>
-            <div class="texts">
-              <h3>휴먼 올리고 리페어 앰플</h3>
-              <h5>힘 잃고 탄력을 잃은 리부 링클케어 <br>
-                앰플 한병의 영양을 담은 특별함
-              </h5>
+            <div class="article">
+              <div class="image i3"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 앰플</h3>
+                <h5>힘 잃고 탄력을 잃은 리부 링클케어 <br>
+                  앰플 한병의 영양을 담은 특별함
+                </h5>
+              </div>
             </div>
-          </div>
-          <div class="article">
-            <div class="image i4"></div>
-            <div class="texts">
-              <h3>휴먼 올리고 리페어 2종 set</h3>
-              <h5>세트 구매시 10% 할인 <br>
-                집중관리 세트</h5>
+            <div class="article">
+              <div class="image i4"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 2종 set</h3>
+                <h5>세트 구매시 10% 할인 <br>
+                  집중관리 세트</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i1"></div>
+              <div class="texts">
+                <h3>2</h3>
+                <h5>깊은 주름/화이트닝 은행잎수34% <br> EGG이펙트/EFF이펙트</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i2"></div>
+              <div class="texts">
+                <h3>2</h3>
+                <h5>10% 할인이벤트 산삼 배양근 <br> 피부속까지 진정</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i3"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 앰플</h3>
+                <h5>힘 잃고 탄력을 잃은 리부 링클케어 <br>
+                  앰플 한병의 영양을 담은 특별함
+                </h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i4"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 2종 set</h3>
+                <h5>세트 구매시 10% 할인 <br>
+                  집중관리 세트</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i1"></div>
+              <div class="texts">
+                <h3>3</h3>
+                <h5>깊은 주름/화이트닝 은행잎수34% <br> EGG이펙트/EFF이펙트</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i2"></div>
+              <div class="texts">
+                <h3>3</h3>
+                <h5>10% 할인이벤트 산삼 배양근 <br> 피부속까지 진정</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i3"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 앰플</h3>
+                <h5>힘 잃고 탄력을 잃은 리부 링클케어 <br>
+                  앰플 한병의 영양을 담은 특별함
+                </h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i4"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 2종 set</h3>
+                <h5>세트 구매시 10% 할인 <br>
+                  집중관리 세트</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i1"></div>
+              <div class="texts">
+                <h3>4</h3>
+                <h5>깊은 주름/화이트닝 은행잎수34% <br> EGG이펙트/EFF이펙트</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i2"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 크림</h3>
+                <h5>10% 할인이벤트 산삼 배양근 <br> 피부속까지 진정</h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i3"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 앰플</h3>
+                <h5>힘 잃고 탄력을 잃은 리부 링클케어 <br>
+                  앰플 한병의 영양을 담은 특별함
+                </h5>
+              </div>
+            </div>
+            <div class="article">
+              <div class="image i4"></div>
+              <div class="texts">
+                <h3>휴먼 올리고 리페어 2종 set</h3>
+                <h5>세트 구매시 10% 할인 <br>
+                  집중관리 세트</h5>
+              </div>
             </div>
           </div>
           <div class="btns">
@@ -135,22 +232,40 @@
           </ul>
         </div>
         <div class="artRight">
-          <div class="article Left">
-            <div class="image i1"></div>
-            <div class="image i2"></div>
-            <div class="image i3"></div>
-            <div class="texts">
-              <h4>cool tone</h4>        
+          <div class="artRightGroup">
+            <div class="article Left">
+              <div class="image i1"></div>
+              <div class="image i2"></div>
+              <div class="image i3"></div>
+              <div class="texts">
+                <h4>cool tone</h4>        
+              </div>
             </div>
+            <div class="article Right">
+              <div class="image i4"></div>
+              <div class="image i5"></div>
+              <div class="image i6"></div>
+              <div class="texts">
+                <h4>warm tone</h4> 
+              </div>
+            </div>
+            <div class="article Left">
+              <div class="image i1"></div>
+              <div class="image i2"></div>
+              <div class="image i3"></div>
+              <div class="texts">
+                <h4>cool tone222</h4>        
+              </div>
+            </div>
+            <div class="article Right">
+              <div class="image i4"></div>
+              <div class="image i5"></div>
+              <div class="image i6"></div>
+              <div class="texts">
+                <h4>warm tone222</h4> 
+              </div>
+            </div>  
           </div>
-          <div class="article Right">
-            <div class="image i4"></div>
-            <div class="image i5"></div>
-            <div class="image i6"></div>
-            <div class="texts">
-              <h4>warm tone</h4> 
-            </div>
-          </div> 
           <div class="btns">
             <div class="btn"><i class="xi-angle-left"></i></div>
             <div class="btn"><i class="xi-angle-right"></i></div>
@@ -248,13 +363,107 @@
               <h3>price</h3>
             </div>
           </div>
+          <div class="article">
+            <div class="image i1"></div>
+            <div class="texts">
+              <h5>222222222</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i2"></div>
+            <div class="texts">
+              <h5>시카로 광채 토너</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i3"></div>
+            <div class="texts">
+              <h5>시카로 광채 탄력 크림</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i4"></div>
+            <div class="texts">
+              <h5>시카로 에센셜 미스트</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i1"></div>
+            <div class="texts">
+              <h5>333333333</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i2"></div>
+            <div class="texts">
+              <h5>시카로 광채 토너</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i3"></div>
+            <div class="texts">
+              <h5>시카로 광채 탄력 크림</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i4"></div>
+            <div class="texts">
+              <h5>시카로 에센셜 미스트</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i1"></div>
+            <div class="texts">
+              <h5>44444444</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i2"></div>
+            <div class="texts">
+              <h5>시카로 광채 토너</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i3"></div>
+            <div class="texts">
+              <h5>시카로 광채 탄력 크림</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i4"></div>
+            <div class="texts">
+              <h5>시카로 에센셜 미스트</h5>
+              <h4>Lorem ipsum dolor sit</h4>
+              <h3>price</h3>
+            </div>
+          </div>    
         </div>
-        <ul class="paging">
-          <li class="on"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>    
+        <div class="btns">
+          <div class="btn"><i class="xi-angle-left"></i></div>
+          <div class="btn"><i class="xi-angle-right"></i></div>
+        </div>
       </div>
     </div>
   </div>
