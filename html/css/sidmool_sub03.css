@@ -330,16 +330,36 @@ div.bnrWrap>div.banner{
     margin: 0 auto;
     position: relative;
     font-family: 'Gowun Dodum';
+    overflow: hidden;
 }
-div.bnrWrap>div.banner>div.image{
+
+div.bnrWrap>div.banner>div.bnrGroup{
+    width: 200%;
+    transition: all 0.5s;
+}
+div.bnrWrap>div.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+div.bnrWrap>div.banner>div.bnrGroup>div.bnr01{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+div.bnrWrap>div.banner>div.bnrGroup>div.bnr02{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+div.bnrWrap>div.banner div.image{
     height: 480px;
-    
     background-image: url('../images/sub3_bnr.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-div.bnrWrap>div.banner>div.texts{
+div.bnrWrap>div.banner div.texts{
     width: calc(100% / 12 * 3.5);
     position: absolute;
     right: calc(100% / 12 * 2);
@@ -350,25 +370,35 @@ div.bnrWrap>div.banner>div.texts{
     padding: 120px 10px;
     
 }
-div.bnrWrap>div.banner>div.texts>div.text{
+div.bnrWrap>div.banner>div.bnrGroup>div.bnr02>div.image{
+    background-image: url('../images/sub3_bnr2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.bnrWrap>div.banner>div.bnrGroup>div.bnr02>div.texts{
+    background-color: rgb(192, 166, 64);
+    left: calc(100% / 12 * 2);
+}
+div.bnrWrap>div.banner div.texts>div.text{
     width: 80%;
     float: left;
 }
-div.bnrWrap>div.banner>div.texts>div.text>h4{
+div.bnrWrap>div.banner div.texts>div.text>h4{
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
 }
-div.bnrWrap>div.banner>div.texts>div.text>h3{
+div.bnrWrap>div.banner div.texts>div.text>h3{
     font-size: 30px;
     line-height: 40px;
 }
-div.bnrWrap>div.banner>div.texts>div.text>div.txt::after{
+div.bnrWrap>div.banner div.texts>div.text>div.txt::after{
     content: '';
     display: block;
     clear: both;
 }
-div.bnrWrap>div.banner>div.texts>div.text>div.txt>h5{
+div.bnrWrap>div.banner div.texts>div.text>div.txt>h5{
     font-size: 13px;
     line-height: 20px;
     height: 20px;
@@ -376,13 +406,13 @@ div.bnrWrap>div.banner>div.texts>div.text>div.txt>h5{
     float: left;
     margin-right: 5px;
 }
-div.bnrWrap>div.banner>div.texts>div.text>p{
+div.bnrWrap>div.banner div.texts>div.text>p{
     font-size: 12px;
     line-height: 20px;
     height: 80px;
     overflow: hidden;
 }
-div.bnrWrap>div.banner>div.texts>div.btn{
+div.bnrWrap>div.banner div.texts>div.btn{
     float: right;
     width: 10%;
     position: absolute;

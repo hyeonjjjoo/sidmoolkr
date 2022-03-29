@@ -77,7 +77,7 @@ div.cntWrap>div.content>div.header>div.btns::after{
   display: block;
   clear: both;
 }
-div.cntWrap>div.content>div.header>div.btns>div.btn{
+div.cntWrap>div.content>div.header>div.btns>div{
   width: 50%;
   height: 40px;
   line-height: 40px;
@@ -89,8 +89,9 @@ div.cntWrap>div.content>div.header>div.btns>div.btn{
   text-align: center;
   font-family: 'Work Sans';
 }
-div.cntWrap>div.content>div.header>div.btns>div.btn:nth-child(1){
+div.cntWrap>div.content>div.header>div.btns>div.btn{
   background-color: #f8b551;
+  transition: all 0.5s;
 }
 div.cntWrap>div.content>div.section>div.article{
   margin-top: 80px;

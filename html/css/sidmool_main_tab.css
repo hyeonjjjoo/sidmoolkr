@@ -292,7 +292,7 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li{
 
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li:nth-child(5)~li{
   display: none;
-}
+} 
 
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image{
   height: 80px;
@@ -316,9 +316,30 @@ div.cntWrap>div.content.cnt03>div.header>ul.paging>li.on{
 }
 
 div.cntWrap>div.content.cnt03>div.section div.article{
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 8 - 20px);
 }
-div.cntWrap>div.content.cnt03>div.section div.article:nth-child(2)~div{
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(2){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(3){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(6){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(7){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(10){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(11){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(14){
+  display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article:nth-child(15){
   display: none;
 }
 

@@ -235,7 +235,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li.hLight::after{
   
 }
 /* 호버 수정 */
-/* div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover{
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover{
   font-size: 16px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover::after{
@@ -249,7 +249,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover::after{
   position: absolute;
   z-index: -1;
   
-} */
+} 
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.paging{
   width: 100%;
   height: 8px;
@@ -627,27 +627,33 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li{
   margin: 0 10px;
   float: left;
 }
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li.show>div.image{
+  background-color: #ffc592;
+  background-size: cover;
+}
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li.show>div.image.i{
+  background-size: cover; 
+}
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image{
   border-radius: 50%;
   height: 70px;
   background-color: rgb(255, 255, 255);
-}
+}  
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image:hover{
   background-color: #ffc592;
-  
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i1:hover{
   background-size: cover;
 }
+
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i1{
   background-image: url('../images/icon1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i2:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i1:hover{
+  background-size: cover; 
 }
+
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i2{
   background-image: url('../images/icon2.png');
   background-size: contain;
@@ -655,8 +661,8 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i2{
   background-repeat: no-repeat;
 
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i3:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i2:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i3{
   background-image: url('../images/icon3.png');
@@ -664,8 +670,8 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i3{
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i4:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i3:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i4{
   background-image: url('../images/icon4.png');
@@ -673,8 +679,8 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i4{
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i5:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i4:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i5{
   background-image: url('../images/icon5.png');
@@ -682,8 +688,8 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i5{
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i6:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i5:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i6{
   background-image: url('../images/icon6.png');
@@ -692,8 +698,8 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i6{
   background-repeat: no-repeat;
   
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i7:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i6:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i7{
   background-image: url('../images/icon7.png');
@@ -701,8 +707,8 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i7{
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i8:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i7:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i8{
   background-image: url('../images/icon8.png');
@@ -710,14 +716,17 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i8{
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i9:hover{
-  background-size: cover;
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i8:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i9{
   background-image: url('../images/icon9.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i9:hover{
+  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>h5{
   text-align: center;
@@ -737,6 +746,7 @@ div.cntWrap>div.content.cnt03>div.section>div.artGroup::after{
 }
 div.cntWrap>div.content.cnt03>div.section>div.artGroup{
   width: 400%;
+  transition: all 0.5s;
 }
 div.cntWrap>div.content.cnt03>div.section div.article{
   width: calc(100% / 16 - 20px);
