@@ -8,16 +8,16 @@ $(function(){
     var li = $('.content.cnt01 ul.paging>li');
     var li3 = $('.content.cnt03 li');
     var artGroup = $('.content.cnt01 .artGroup');
+    var textGroup = $('.textGroup');
     var artGroup2 = $('.artRightGroup');
     var artGroup3 = $('.content.cnt03 .artGroup');
     var btn2 = $('.content.cnt02 .btn');
     var txt = $('.artLeft');
     var page = $('.content.cnt02 li');
+    var len = $('.articles').length
     btn.eq(0).click(function(){
         i--
-        if(i<=0){
-            i=0
-        }
+        i = (len+i)%len;
         artGroup.css('margin-left',-100*i+'%')
         li.removeClass('on');
         li.eq(i).addClass('on');
@@ -26,9 +26,7 @@ $(function(){
     });
     btn.eq(1).click(function(){
         i++
-        if(i>=3){
-            i=3
-        }
+        i = i%len
         artGroup.css('margin-left',-100*i+'%')
         li.removeClass('on');
         li.eq(i).addClass('on');
@@ -62,59 +60,66 @@ $(function(){
         
     });
     // 컨텐츠2
+
+    textGroup.find('.text:last').prependTo(textGroup);
+    textGroup.css({marginLeft:'-100%'});
+    artGroup2.find('.article:first').css('opacity','0');
     btn2.eq(0).click(function(){
-        j--
-        btn2.eq(1).css('opacity','1')
-        if(j<=0){
-            j=0
-            $(this).css('opacity','0')
-        }
-        artGroup2.css('margin-left', 100 * j +'%')
-        txt.find('h3').text('01');
-        txt.find('h5').text('시카로 스킨 비에프');
-        txt.find('p:first').text('&num;광채 에센스');
-        txt.find('p:last').text('&num;B.F크림');
-        page.removeClass('on');
-        page.eq(j).addClass('on');
-    
-       
+        artGroup2.find('.article:first').animate({
+            opacity: '1'
+        },500);
+        artGroup2.animate({
+            marginLeft : '33%',
+        },500,function(){
+            artGroup2.find('.article:last').css('opacity','0');
+            artGroup2.find('.article:last').prependTo(artGroup2);
+            artGroup2.css({marginLeft:'0%'});
+        });
+        textGroup.animate({
+            marginLeft : '100%',       
+         });
+
+      
     });
     btn2.eq(1).click(function(){
-        j++
-        btn2.eq(0).css('opacity','1')
-        if(j>=1){
-            j=1
-            $(this).css('opacity','0')
-        }
-        artGroup2.css('margin-left', -100 * j +'%')
-        txt.find('h3').text('02');
-        txt.find('h5').text('시카로 스킨 비에프2');
-        txt.find('p:first').text('&num;에센스2');
-        txt.find('p:last').text('&num;크림2');
-        page.removeClass('on');
-        page.eq(j).addClass('on');
+        artGroup2.find('.article:eq(1)').animate({
+            opacity: '0'
+        },500);
+
+        artGroup2.stop().animate({
+            marginLeft:'-33%',
+            
+        },500,function(){
+            artGroup2.find('.article:first').appendTo(artGroup2);
+            artGroup2.find('.article:last').css('opacity','1');
+            artGroup2.css({marginLeft:'0%'});
+        });
+        textGroup.stop().animate({
+            marginLeft : '-200%',       
+         },600,function(){
+            textGroup.find('.text:first').appendTo(textGroup);
+            textGroup.css({marginLeft:'-100%'});
+         });
+      
+        // j++
+        // btn2.eq(0).css('opacity','1')
+        // if(j>=1){
+        //     j=1
+        //     $(this).css('opacity','0')
+        // }
+        // artGroup2.css('margin-left', -100 * j +'%')
+        // page.removeClass('on');
+        // page.eq(j).addClass('on');
 
     });
 
-    page.click(function(){
-        var inddd = $(this).index();
-        page.removeClass('on');
-        $(this).addClass('on');
-        artGroup2.css('margin-left', inddd * -100 +'%')
+    // page.click(function(){
+    //     var inddd = $(this).index();
+    //     page.removeClass('on');
+    //     $(this).addClass('on');
+    //     artGroup2.css('margin-left', inddd * -100 +'%')
         
-    });
-    page.eq(0).click(function(){
-        txt.find('h3').text('01');
-        txt.find('h5').text('시카로 스킨 비에프');
-        txt.find('p:first').text('&num;광채 에센스');
-        txt.find('p:last').text('&num;B.F크림');
-    });
-    page.eq(1).click(function(){
-        txt.find('h3').text('02');
-        txt.find('h5').text('시카로 스킨 비에프2');
-        txt.find('p:first').text('&num;에센스2');
-        txt.find('p:last').text('&num;크림2');  
-    });
+    // });
 
     // 컨텐츠3
 

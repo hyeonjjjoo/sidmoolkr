@@ -283,52 +283,61 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight>div.artView{
    width: calc((100vw - 1080px) / 2 + 100%);
    min-width: calc((100vw - 80vw) / 2 + 100%);
    overflow: hidden;
-   
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup{
-   width: 400%;
+  width: 400%;
+  transition: all 0.5s;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup::after{
   content: '';
   display: block;
   clear: both;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article{
-  width: calc(100% / 16 - 10px);
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles{
+  width: calc(100% / 4);
+  float: left;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article{
+  width: calc(100% / 4 - 10px);
   margin: 0px 5px;
   float: left;
 }
 
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.image{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image{
   height: 400px;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.image.i1{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image.i1{
   background-image: url('../images/pd1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.image.i2{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image.i2{
   background-image: url('../images/pd2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.image.i3{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image.i3{
   background-image: url('../images/pd3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.image.i4{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image.i4{
   background-image: url('../images/pd4.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.texts>h3{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.texts>h3{
   font-size: 13px;
   line-height: 20px;
   font-weight: 700;
@@ -337,7 +346,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>
   height: 20px;
   overflow: hidden;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.artGroup>div.article>div.texts>h5{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.texts>h5{
   font-size: 12px;
   line-height: 20px;
   height: 40px;
@@ -349,7 +358,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.btns{
   float: left;
   width: 100%;
   font-size: 30px;
-  margin-top: -210px;
+  margin-top: -290px;
   position: relative;
   padding: 0px 10px;
   
@@ -374,6 +383,25 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.btns>div.btn:nth-chil
 /* 컨텐츠2 */
 
 
+div.cntWrap>div.content.cnt02>div.section{
+  position: relative;
+  height: 550px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artLeft{
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  left: 0;
+  top: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight{
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  left: -31%;
+  top: 0;
+}
+
 div.cntWrap>div.content.cnt02>div.section::after{
   content: '';
   display: block;
@@ -381,10 +409,10 @@ div.cntWrap>div.content.cnt02>div.section::after{
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft{
   width: calc(100% / 12 * 3);
-  float: left;
   padding-left: calc(100% / 12 * 0.3);
   margin-top: 40px;
   font-family: 'Gowun Dodum';
+  overflow: hidden;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>div.textGroup{
   width: 300%;
@@ -450,20 +478,20 @@ div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>ul.paging>li.
 }
 
 div.cntWrap>div.content.cnt02>div.section>div.artRight{
-  width: calc(100% / 12 * 9);
-  float: left;
+  width: 133%;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight>div.artView{
   width: calc((100vw - 1080px) / 2 + 100%);
   min-width: calc((100vw - 80vw) / 2 + 100%);
   overflow: hidden;
+  
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup{
-  width: 149%;
+  width: 197%;
 }
 /* 펄스트시작 */
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article{
-  width: calc(100% / 3 - 10px);
+  width: calc(100% / 6 - 10px);
   position: relative;
   margin: 0 5px;
   float: left;
@@ -471,7 +499,7 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.image.i1{
   height: 550px;
   background-color: #a9b8a2;
-  background-image: url('../images/pic1.jpg');
+  background-image: url('../images/pic5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -498,11 +526,45 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
   right: 0;
   bottom: 0;
   background-clip: unset;
-  background-image: url('../images/pd5.png');
+  background-image: url('../images/pd11.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.image.i1{
+  background-color: rgb(250, 230, 164);
+  background-image :none
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.image.i2{
+  background-image: url('../images/pic5.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.image.i3{
+  background-image: url('../images/pd11.png');
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i1{
+  background-image: url('../images/pic2.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i2{
+
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i3{
+  background-image: url('../images/pd6.png');
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i1{
+  background-image: url('../images/pic1.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i2{
+  
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i3{
+  background-image: url('../images/pd5.png');
+}
+
+
+
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.texts{
   width: 100%;
   text-align: center;
@@ -517,136 +579,14 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
   text-transform: capitalize;
   font-family: 'Oooh Baby';
 }
-/* 벌스트 끝 */
-/* 미드시작 */
-/* div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid{
-  width: calc(50% - 10px);
-  float: left;
-  margin: 0 5px;
-  position: relative;
-  
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i4{
-  height: 550px;
-  background-color: #a9b8a2;
-  background-image: url('../images/pic2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i5{
-  width: calc(100% / 4 * 3) ;
-  height: 350px;
-  background-color: #ffffff;
-  opacity: 50%;
-  position: absolute;
-  margin: auto;
-  top: 85px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i6{
-  width: calc(100% / 4 * 3) ;
-  height: 350px;
-  position: absolute;
-  margin: auto;
-  top: 85px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/pd6.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-  
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.texts{
-  width: 100%;
-  font-size: 95px;
-  font-style: italic;
-  position: absolute;
-  top: 18px;
-  left: 0px; 
-  z-index: 5;
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
-  font-family: 'Oooh Baby';
-  text-align: center;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.texts>h4{
-  color: rgb(255, 164, 146);
-} */
-/* 미드 끝 */
-/* right 시작*/
-/* div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right{
-  width: calc(50% - 10px);
-  float: left;
-  margin: 0 5px;
-  position: relative;
-  
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i4{
-  height: 550px;
-  background-color: #a9b8a2;
-  background-image: url('../images/pic2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i5{
-  width: calc(100% / 4 * 3) ;
-  height: 350px;
-  background-color: #ffffff;
-  opacity: 50%;
-  position: absolute;
-  margin: auto;
-  top: 85px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i6{
-  width: calc(100% / 4 * 3) ;
-  height: 350px;
-  position: absolute;
-  margin: auto;
-  top: 85px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/pd6.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-  
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.texts{
-  width: 100%;
-  font-size: 95px;
-  font-style: italic;
-  position: absolute;
-  top: 18px;
-  left: 0px; 
-  z-index: 5;
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
-  font-family: 'Oooh Baby';
-  text-align: center;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.texts>h4{
-  color: rgb(255, 164, 146);
-} */
-
-/* right 끝*/
 
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.btns{
-  width: 99%;
+  width: 66%;
   margin-right: 20px;
   font-size: 77px;
   line-height: 80px;
   margin-top: -280px;
-  float: left;
+  float: right;
   position: relative;
   
   
