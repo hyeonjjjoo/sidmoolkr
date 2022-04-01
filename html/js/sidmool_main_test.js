@@ -68,19 +68,30 @@ $(function(){
         artGroup2.find('.article:first').animate({
             opacity: '1'
         },500);
-        artGroup2.animate({
+        artGroup2.stop().animate({
             marginLeft : '33%',
         },500,function(){
             artGroup2.find('.article:last').css('opacity','0');
             artGroup2.find('.article:last').prependTo(artGroup2);
             artGroup2.css({marginLeft:'0%'});
         });
-        textGroup.animate({
-            marginLeft : '100%',       
+        textGroup.stop().animate({
+            marginLeft : '0%',       
+         },600,function(){
+            textGroup.find('.text:last').prependTo(textGroup);
+            textGroup.css({marginLeft:'-100%'});
          });
-
+         j--
+         if(j<=-1){
+             j=2
+         }
+         page.removeClass('on')
+         page.eq(j).addClass('on')
+        
       
     });
+
+
     btn2.eq(1).click(function(){
         artGroup2.find('.article:eq(1)').animate({
             opacity: '0'
@@ -100,27 +111,17 @@ $(function(){
             textGroup.find('.text:first').appendTo(textGroup);
             textGroup.css({marginLeft:'-100%'});
          });
+         j++
+         if(j>=3){
+             j=0
+         }
+         page.removeClass('on')
+         page.eq(j).addClass('on')
       
-        // j++
-        // btn2.eq(0).css('opacity','1')
-        // if(j>=1){
-        //     j=1
-        //     $(this).css('opacity','0')
-        // }
-        // artGroup2.css('margin-left', -100 * j +'%')
-        // page.removeClass('on');
-        // page.eq(j).addClass('on');
-
     });
+    
 
-    // page.click(function(){
-    //     var inddd = $(this).index();
-    //     page.removeClass('on');
-    //     $(this).addClass('on');
-    //     artGroup2.css('margin-left', inddd * -100 +'%')
-        
-    // });
-
+    
     // 컨텐츠3
 
     $('.content.cnt03 .btn').eq(0).click(function(){

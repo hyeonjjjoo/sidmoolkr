@@ -175,7 +175,7 @@ div.cntWrap>div.content{
 
 div.cntWrap>div.content>div.header>h2{
   line-height: 45px;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: capitalize;
   font-weight: 700;
   font-family: 'Work Sans';
@@ -201,34 +201,36 @@ div.cntWrap>div.content.cnt01>div.section::after{
   clear: both;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft{
-  width: calc(100% / 12 * 3);
+  width: calc(100% / 12 * 2.5);
   float: left;
-  margin-top: 40px;
+  margin-top: 77px;
   padding-left: calc(100% / 12 * 0.3);
 
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li{
-  line-height: 20px;
-  margin-top: 10px;
+  line-height: 30px;
+  margin-top: 20px;
   font-style: italic;
   position: relative;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 17px;
   cursor: pointer;
   font-family: 'Gowun Dodum';
+  color: #999;
   
   
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li.hLight{
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li.hLight::after{
   content: '';
   display: block;
-  width: 50% ;
-  height: 25px;
-  background-color: #ffc592;
+  width: 68% ;
+  height: 30px;
+  background-color: #ffd1a8;
   top: 0;
   left: -10px;
   position: absolute;
@@ -237,14 +239,14 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li.hLight::after{
 }
 /* 호버 수정 */
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover{
-  font-size: 16px;
+  font-size: 18px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover::after{
   content: '';
   display: block;
-  width: 50% ;
-  height: 25px;
-  background-color: #ffc592;
+  width: 68% ;
+  height: 30px;
+  background-color: #ffd1a8;
   top: 0;
   left: -10px;
   position: absolute;
@@ -260,22 +262,22 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.paging{
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.paging>li{
   width: 8px;
   height: 8px;
-  background-color: #999;
+  border: 1px solid #000 ;
   float: left;
   margin-right: 6px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.5s;
-  font-size: 16px;
   
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.paging>li.on{
-  width: 21px;
+  width: 16px;
   background-color: #000;
+
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artRight{
-  width: calc(100% / 12 * 9);
+  width: calc(100% / 12 * 9.5);
   float: right;
 
 }
@@ -310,7 +312,8 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article{
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image{
-  height: 400px;
+  height: 350px;
+  
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image.i1{
   background-image: url('../images/pd1.png');
@@ -338,7 +341,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.texts>h3{
-  font-size: 13px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   margin-top: 10px;
@@ -347,10 +350,10 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>
   overflow: hidden;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.texts>h5{
-  font-size: 12px;
+  font-size: 15px;
   line-height: 20px;
   height: 40px;
-  margin-top: 5px;
+  margin-top: 10px;
   font-family: 'Gowun Dodum';
   overflow: hidden;
 }
@@ -385,7 +388,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.btns>div.btn:nth-chil
 
 div.cntWrap>div.content.cnt02>div.section{
   position: relative;
-  height: 550px;
+  height: 510px;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft{
   position: absolute;
@@ -398,7 +401,7 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight{
   position: absolute;
   z-index: 1;
   margin: auto;
-  left: -31%;
+  left: -12%;
   top: 0;
 }
 
@@ -416,37 +419,37 @@ div.cntWrap>div.content.cnt02>div.section>div.artLeft{
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>div.textGroup{
   width: 300%;
-  height: 370px;
+  height: 445px;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>div.textGroup>div.text{
   width: calc(100% / 3);
-  height: 370px;
+  height: 300px;
   float: left;
   padding-top: 87px;
  
 }
 
 div.cntWrap>div.content.cnt02>div.section>div.artLeft h3{
-  line-height: 45px;
+  line-height: 60px;
   font-style: italic;
   color: #fc9d9d;
-  font-size: 45px;
+  font-size: 53px;
   font-weight: 700;
   
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft h5{
   line-height: 40px;
   font-style: italic;
-  font-size: 26px;
-  margin-top: 40px;
+  font-size: 23px;
+  margin-top: 10px;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft h5::after{
   content: '';
   display: block;
-  width: 80%;
+  width: 89%;
   height: 1px;
   background-color: #000;
-  margin-top: 15px;
+  margin-top: 3px;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft p:nth-child(3){
   margin-top: 10px;
@@ -459,8 +462,8 @@ div.cntWrap>div.content.cnt02>div.section>div.artLeft p{
 div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>ul.paging{
   width: 100%;
   height: 8px;
-  margin-top: 125px;
-  
+  margin-top: 10px;
+
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>ul.paging>li{
   width: 8px;
@@ -468,17 +471,17 @@ div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>ul.paging>li{
   float: left;
   border-radius: 4px;
   margin-right: 6px;
-  background-color: #999;
+  border: 1px solid #000 ;
   transition: all 0.5s;
-  cursor: pointer;
+
 }
 div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>ul.paging>li.on{
-  width: 20px;
+  width: 16px;
   background-color: #000;
 }
 
 div.cntWrap>div.content.cnt02>div.section>div.artRight{
-  width: 133%;
+  width: 113%;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight>div.artView{
   width: calc((100vw - 1080px) / 2 + 100%);
@@ -489,7 +492,7 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight>div.artView{
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup{
   width: 197%;
 }
-/* 펄스트시작 */
+
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article{
   width: calc(100% / 6 - 10px);
   position: relative;
@@ -497,7 +500,7 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
   float: left;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.image.i1{
-  height: 550px;
+  height: 510px;
   background-color: #a9b8a2;
   background-image: url('../images/pic5.jpg');
   background-size: cover;
@@ -506,19 +509,22 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.image.i2{
   width: calc(100% / 4 * 3) ;
-  height: 350px;
+  height: 314px;
   background-color: #ffffff;
-  opacity: 80%;
+  background-image: url('../images/pic6.jpg');
+  background-position: center;
+  /* background-size: cover; */
+  opacity: 100%;
   position: absolute;
   margin: auto;
-  top: 85px;
+  top: 70px;
   left: 0;
   right: 0;
   bottom: 0;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.image.i3{
   width: calc(100% / 4 * 3) ;
-  height: 350px;
+  height: 270px;
   position: absolute;
   margin: auto;
   top: 85px;
@@ -530,34 +536,37 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.image.i1{
   background-color: rgb(250, 230, 164);
-  background-image :none
+  background-image: none;
+  background-image: url('../images/7.jpg');
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.image.i2{
-  background-image: url('../images/pic5.jpg');
+  background-image: url('../images/9.jpg');
+  background-size: cover;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.image.i3{
   background-image: url('../images/pd11.png');
 }
-
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Left>div.texts{
+  color: rgb(252 255 58);
+}
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i1{
   background-image: url('../images/pic2.jpg');
 }
-div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i2{
-
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.texts{
+  color: rgb(255, 80, 80);
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Mid>div.image.i3{
   background-image: url('../images/pd6.png');
 }
-
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i1{
+
   background-image: url('../images/pic1.jpg');
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i2{
-  
+  background-image: url('../images/33.jpg');
 }
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article.Right>div.image.i3{
   background-image: url('../images/pd5.png');
@@ -568,11 +577,11 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.texts{
   width: 100%;
   text-align: center;
-  font-size: 95px;
+  font-size: 73px;
   font-style: italic;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 18px;
+  top: 28px;
   left: 0px; 
   z-index: 5;
   color: #fff;
@@ -583,9 +592,9 @@ div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.art
 div.cntWrap>div.content.cnt02>div.section>div.artRight div.btns{
   width: 66%;
   margin-right: 20px;
-  font-size: 77px;
+  font-size: 60px;
   line-height: 80px;
-  margin-top: -280px;
+  margin-top: -260px;
   float: right;
   position: relative;
   
