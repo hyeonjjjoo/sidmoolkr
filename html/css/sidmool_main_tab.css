@@ -11,85 +11,49 @@ div.hdrWrap>div.header::after{
   clear: both;
 }
 div.hdrWrap>div.header>h1{
-  line-height: 80px;
+  height: 80px;
 }
 div.hdrWrap>div.header>ul.nav{
   display: none;
 }
-
+div.hdrWrap>div.header>ul.menu{
+  display: none;
+}
 div.hdrWrap>div.header>div.btn{
   display: block;
   font-size: 40px;
   line-height: 80px;
   float: right;
 }
-
-/* 배너공통 */
-div.bnrWrap>div.banner{
-  width: 90%;
-  max-width: 700px;
+/* 메인 */
+div.mainWrap>div.main>div.mainGroup{
+  height: 500px;
 }
-
-/* 배너1 */
-div.bnrWrap.bnrWrap01>div.banner.bnr01{
-  margin-top: 40px;
+div.mainWrap>div.main>div.mainGroup>div.image{
+  height: 500px;
 }
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.image{
-  width: 100%;
+div.mainWrap>div.main>div.mainGroup>div.image h3{
+  font-size: 43px;
 }
-
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.note>div.image{
-  display: none;
+div.mainWrap>div.main>div.mainGroup>div.image h5{
+  margin-top: 0px;
 }
-
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.note>div.texts{
-  padding: 0;
+div.mainWrap>div.main>div.mainGroup>div.image div.btn{
+  margin-top: 13px;
 }
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.note>div.texts>p{
-  display: none;
+div.mainWrap>div.main>div.mainGroup>div.image>div.txt{
+  bottom: 108px;
 }
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts{
-  width: 100%;
-  margin-top: -142px;
-  
+div.mainWrap>div.main>div.mainGroup>div.image.i2>div.txt{
+  top: 147px;
 }
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft{
-  width: calc(100% / 8 * 7.2);
-  padding-right: 80px;
-  
+div.mainWrap>div.main>ul.paging{
+  bottom: 45px;
 }
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft::after{
-  content: '';
-  display: block;
-  clear: both;
-}
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft>h2{
-  width: 45%;
-  float: left;
-  color: #fff;
-}
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtLeft>h3{
-  width: 53%;
-  float: left;
-  margin-top: 55px;
-  height: 80px;
-  overflow: hidden;
-}
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtRight{
-  width: calc(100% / 8 * 0.5 );
-  color: #fff;
-  text-align: right;
-  padding-right: 10px;
-  margin-top: -80px;
-  
-}
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.article>div.texts>div.txtRight>div.btn>i{
-  font-size: 35px;
-  font-weight: 700;
-}
-div.bnrWrap.bnrWrap01>div.banner.bnr01>div.note{
-  top: 374px;
-  right: 180px;
+div.mainWrap>div.main>div.stop{
+  right: 35%;
+  height: 50px;
+  font-size: 49px;
 }
 
 /* 컨텐츠 공통 */
@@ -111,17 +75,16 @@ div.cntWrap>div.content.cnt01>div.section{
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft{
   width: 100%;
-  outline: 2px soild red;
   float: none;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft::after{
   content: '';
   display: block;
   clear: both;
 }
-
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab::after{
   content: '';
   display: block;
@@ -129,21 +92,21 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab::after{
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li{
   float: left;
-  margin-right: 20px;
+  margin-right: 28px;
   line-height: 40px;
-}
-div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li:hover::after{
-
-  width: 107% ;
-  background-color: #ffc592;
-  top: 9px;
-  left: 0px;
-  position: absolute;
-  z-index: -1;
-  
+  font-size: 18px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.paging{
-  display: none;
+  position: absolute;
+  bottom: -498px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  width: 10%;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li.hLight::after{
+  width: 125%;
+  height: 40px;
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artRight{
@@ -156,46 +119,29 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight::after{
   display: block;
   clear: both;
 }
-
-div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article{
-  width: calc(50% - 20px);
-  margin: 0 10px;
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.artView{
+  height: 480px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles{
+  width: 50%;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight>div.btns{
   display: none;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article:nth-child(2)~div.article{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article:nth-child(2)~div.article{
   display: none;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.image{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.image{
   height: 400px;
 }
-
-div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>div.texts{
   text-align: center;
 }
 
-div.cntWrap>div.content.cnt01>div.section>ul.paging{
-  height: 8px;
-  width: calc(100% / 4 * 0.5);
-  min-width: calc(100% / 4 * 0.3);
-  margin: 0 auto;
-  margin-top: 20px;
-}
-div.cntWrap>div.content.cnt01>div.section>ul.paging>li{
-  width: 8px;
-  height: 8px;
-  background-color: #999;
-  float: left;
-  margin-right: 6px;
-  border-radius: 4px;
-}
-div.cntWrap>div.content.cnt01>div.section>ul.paging>li.on{
-  width: 20px;
-  background-color: #000;
-} 
-
 /* 컨텐츠2 */
+div.cntWrap:nth-child(4){
+  margin-top: 80px;
+}
 div.cntWrap>div.content.cnt02>div.header{
   padding: 0;
 }
@@ -267,6 +213,11 @@ div.cntWrap>div.content.cnt02>ul.paging>li.on{
 }
 
 
+/* 배너공통 */
+div.bnrWrap>div.banner{
+  width: 90%;
+  max-width: 700px;
+}
 /* 배너2 */
 div.bnrWrap.bnrWrap02{
   display: none;
