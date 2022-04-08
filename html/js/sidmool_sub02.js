@@ -1,7 +1,15 @@
 $(function(){
-    var btn = $('.btns>div')
-    btn.click(function(){
-        btn.removeClass('btn');
-        $(this).addClass('btn');
+    // 헤더
+    var hdr = $('.hdrWrap');
+    $(window).scroll(function(){
+        var now = $(this).scrollTop();
+        if(now >= 1){
+            hdr.addClass('fix');
+        }else{
+            hdr.removeClass('fix');
+        }
     });
+    
+
+    
 });

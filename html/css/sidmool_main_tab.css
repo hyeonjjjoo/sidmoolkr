@@ -5,11 +5,6 @@ div.hdrWrap>div.header {
   max-width: 700px;
   padding: 0;
 }
-div.hdrWrap>div.header::after{
-  content: '';
-  display: block;
-  clear: both;
-}
 div.hdrWrap>div.header>h1{
   height: 80px;
 }
@@ -98,7 +93,7 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li{
 }
 div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.paging{
   position: absolute;
-  bottom: -498px;
+  bottom: -557px;
   right: 0px;
   left: 0px;
   margin: auto;
@@ -108,7 +103,6 @@ div.cntWrap>div.content.cnt01>div.section>div.artLeft>ul.tab>li.hLight::after{
   width: 125%;
   height: 40px;
 }
-
 div.cntWrap>div.content.cnt01>div.section>div.artRight{
   width: 100%;
   float: none;
@@ -122,8 +116,8 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight::after{
 div.cntWrap>div.content.cnt01>div.section>div.artRight>div.artView{
   height: 480px;
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles{
-  width: 50%;
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article{
+  width: calc(100% / 2 - 10px);
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight>div.btns{
   display: none;
@@ -142,76 +136,41 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article>
 div.cntWrap:nth-child(4){
   margin-top: 80px;
 }
-div.cntWrap>div.content.cnt02>div.header{
-  padding: 0;
+div.cntWrap>div.content.cnt02>div.section{
+  height: 320px;
 }
-
 div.cntWrap>div.content.cnt02>div.section>div.artLeft{
-  float: none;
-  width: 100%;
-  padding: 0;
+  margin-top: 0px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artLeft::after{
-  content: '';
-  display: block;
-  clear: both;
+div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>div.textGroup{
+  height: 300px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artRight{
-  float: none;
-  width: 100%;
-  margin-top: 40px;
+div.cntWrap>div.content.cnt02>div.section>div.artLeft>div.textView>div.textGroup>div.text{
+  padding-top: 0px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artLeft>h3{
-  float: left;
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.image.i1{
+  height: 320px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artLeft>h5{
-  float: left;
-  margin: 0;
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.image.i2{
+  height: 210px;
+  top: 51px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.artRightGroup>div.article>div.texts{
+  top: 26px;
   line-height: 40px;
-  margin-left: 10px;
+  font-size: 37px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artLeft>h5::after{
-  display: none;
+div.cntWrap>div.content.cnt02>div.section>div.artLeft h5{
+  font-size: 18px;
+  line-height: 30px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artLeft>p{
-  display: none;
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.btns{
+  line-height: 54px;
+  margin-top: -185px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artLeft>ul.paging{
- display: none;
+div.cntWrap>div.content.cnt02>div.section>div.artRight div.btns>div.btn{
+  background-color: rgba(0, 0, 0, 0);
 }
-div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Left{
-  width: calc(50% - 20px);
-  margin: 0 10px;
-}
-div.cntWrap>div.content.cnt02>div.section>div.artRight>div.article.Right{
-  width: calc(50% - 20px);
-  margin: 0 10px;
-}
-
-div.cntWrap>div.content.cnt02>div.section>div.artRight>div.btns{
-  display: none;
-}
-
-div.cntWrap>div.content.cnt02>ul.paging{
-  min-width: calc(100% / 8 * 0.5);
-  width: calc(100% / 8 * 0.9);
-  height: 8px;
-  margin: 0 auto;
-  margin-top: 25px;
-}
-div.cntWrap>div.content.cnt02>ul.paging>li{
-  width: 8px;
-  height: 8px;
-  background-color: #999;
-  float: left;
-  margin: 0px 3px;
-  border-radius: 4px;
-}
-div.cntWrap>div.content.cnt02>ul.paging>li.on{
-  width: 20px;
-  background-color: #000;
-}
-
 
 /* 배너공통 */
 div.bnrWrap>div.banner{
@@ -220,7 +179,16 @@ div.bnrWrap>div.banner{
 }
 /* 배너2 */
 div.bnrWrap.bnrWrap02{
-  display: none;
+  
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>h3{
+  font-size: 29px;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>p{
+  font-size: 14px;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.btn{
+  width: calc(100% / 12 * 3.5);
 }
 
 /* 컨텐츠3 */
@@ -309,7 +277,6 @@ div.bnrWrap.bnrWrap03{
 div.bnrWrap.bnrWrap03>div.banner.bnr03 {
   width: 100%;
 }
-
 div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts>h5{
   font-size: 20px;
 }
@@ -354,4 +321,7 @@ div.ftrWrap>div.footer>div.ftrRight{
   text-align: center;
   float: none;
   margin-top: -70px;
+}
+div.ftrWrap>div.footer>div.ftrRight>select{
+  display: none;
 }
