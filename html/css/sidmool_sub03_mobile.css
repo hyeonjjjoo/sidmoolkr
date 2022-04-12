@@ -3,9 +3,16 @@ div.hdrWrap>div.header{
     width: 90%;
   }
   div.hdrWrap>div.header>h1{
-    text-align: right;
-    width: calc(100% / 4 * 3);
-    padding-right: 20px;
+    width: calc(100% / 4 * 2);
+  }
+  div.hdrWrap ul.tab{
+    padding: 0px 20px;
+  }
+  div.hdrWrap ul.tab h1{
+    font-size: 32px;
+  }
+  div.hdrWrap ul.tab li{
+    font-size: 18px;
   }
 
 /* 메인 */
@@ -88,35 +95,51 @@ div.cntWrap>div.content.cnt02>div.image{
     margin-top: 10px;
 }
 
+/* 컨텐츠4 */
+div.cntWrap>div.content.cnt04{
+    width: 80%;
+}
+div.cntWrap>div.content.cnt04>div.section{
+    margin-left: 0px;
+}
+div.cntWrap>div.content.cnt04>div.section>div.article {
+    width: calc(100% - 20px);
+}
+div.cntWrap>div.content.cnt04>div.section>div.article:nth-child(2)~.article {
+    display: none;
+}
+div.cntWrap>div.content.cnt04>div.header>div.hdrLeft>h2{
+    font-size: 27px;
+}
 
 
 /* 배너 */
 div.bnrWrap>div.banner{
     width: 90%;
 }
-div.bnrWrap>div.banner>div.image{
+div.bnrWrap>div.banner div.image{
     height: 160px;
 }
-div.bnrWrap>div.banner>div.texts{
+div.bnrWrap>div.banner div.texts{
     height: 160px;
     margin-top: -160px ;
     padding: 10px 15px;
 }
-div.bnrWrap>div.banner>div.texts>div.text>p{
+div.bnrWrap>div.banner div.texts>div.text>p{
     display: none;
 }
-div.bnrWrap>div.banner>div.texts>div.text>h4{
+div.bnrWrap>div.banner div.texts>div.text>h4{
     font-size: 10px;
 }
-div.bnrWrap>div.banner>div.texts>div.text>h3{
+div.bnrWrap>div.banner div.texts>div.text>h3{
     font-size: 16px;
     line-height: 20px;
 }
-div.bnrWrap>div.banner>div.texts>div.text>div.txt>h5{
+div.bnrWrap>div.banner div.texts>div.text>div.txt>h5{
     font-size: 10px;
     float: none;
 }
-div.bnrWrap>div.banner>div.texts>div.btn{
+div.bnrWrap>div.banner div.texts>div.btn{
     font-size: 25px;
 }
 div.bnrWrap>ul.paging{
@@ -149,3 +172,4 @@ div.ftrWrap>div.footer{
   div.ftrWrap>div.footer>div.ftrRight>i{
     font-size: 20px;
   }
+  

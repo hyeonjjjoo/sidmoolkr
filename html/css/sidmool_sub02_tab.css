@@ -4,18 +4,15 @@ div.hdrWrap>div.header {
   max-width: 700px;
   padding: 0;
 }
-div.hdrWrap>div.header::after{
-  content: '';
-  display: block;
-  clear: both;
-}
 div.hdrWrap>div.header>h1{
-  line-height: 80px;
+  height: 80px;
 }
 div.hdrWrap>div.header>ul.nav{
   display: none;
 }
-
+div.hdrWrap>div.header>ul.menu{
+  display: none;
+}
 div.hdrWrap>div.header>div.btn{
   display: block;
   font-size: 40px;
@@ -24,10 +21,6 @@ div.hdrWrap>div.header>div.btn{
 }
 
 /* 배너 */
-div.bnrWrap{
-  margin-top: 40px;
-}
-
 div.bnrWrap>div.banner{
   width: 90%;
   max-width: 700px;
@@ -117,13 +110,11 @@ div.cntWrap>div.content.cnt03>div.section div.article:nth-child(2)~div.article{
 div.ftrWrap{
   margin-top: 40px;
 }
-
 div.ftrWrap>div.footer{
   width: 90%;
   max-width: 700px;
   padding-bottom: 80px;
 }
-
 div.ftrWrap>div.footer>div.ftrLeft{
   width: 100%;
   text-align: center;
@@ -132,11 +123,9 @@ div.ftrWrap>div.footer>div.ftrLeft{
 div.ftrWrap>div.footer>div.ftrLeft>ul.nav{
   display: none;
 }
-
 div.ftrWrap>div.footer>div.ftrLeft>h1{
   font-size: 25px;
 }
-
 div.ftrWrap>div.footer>div.ftrLeft>h4:nth-last-child(2){
   display: none;
 }
@@ -144,10 +133,12 @@ div.ftrWrap>div.footer>div.ftrLeft>h4{
   margin-top: 60px;
   font-size: 12px;
 }
-
 div.ftrWrap>div.footer>div.ftrRight{
   width: 100%;
   text-align: center;
   float: none;
   margin-top: -70px;
+}
+div.ftrWrap>div.footer>div.ftrRight>select{
+  display: none;
 }

@@ -15,13 +15,11 @@ div.hdrWrap{
   z-index: 4;
   color: #4f4e4c;
 }
-
 div.hdrWrap.fix{
   position: fixed;
   background-color: #fff;
   background: linear-gradient(180deg,white 31%, rgba(255, 255, 255, 0) 155%)
 }
-
 div.hdrWrap>div.header{
   width: 80%;
   max-width: 1080px;
@@ -29,14 +27,104 @@ div.hdrWrap>div.header{
   padding: 10px 0 10px;
   line-height: 50px;
 }
-
 div.hdrWrap>div.header::after{
   content: '';
   display: block;
   clear: both;
 }
+
+/* 헤더 사이드슬라이드 */
+div.hdrWrap ul.tab{
+  display: block;
+  position: absolute;
+  top: 0;
+  width: calc(100% / 8 * 7.5);
+  height: 100vh;
+  z-index: 5;
+  padding: 0px calc(100% / 8);
+  right: -100%;
+  background-color: rgb(255, 255, 255);
+  line-height: 80px;
+  box-shadow: 7px 0 30px #666;
+}
+ul.tab li a{
+  padding-right: 20px;
+}
+div.hdrWrap ul.tab h1{
+  width: calc(100% / 7 * 3);
+  font-size: 38px;
+  font-weight: 700;
+  font-family: 'Lora';
+  float: left;
+  text-align: left;
+}
+div.hdrWrap .btns{
+  width: calc(100% / 7 * 4);
+  float: left;
+  font-size: 40px;
+  height: 50px;
+}
+div.hdrWrap .btn{
+  float: right;
+  margin-left: 15px;
+}
+div.hdrWrap ul.tab li:nth-child(2){
+  margin-top: 50px;
+}
+div.hdrWrap ul.tab li:nth-child(3){
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ;
+}
+div.hdrWrap ul.tab li:nth-child(4){
+border-top: 2px solid rgb(199, 199, 199);
+}
+div.hdrWrap ul.tab li:nth-child(5){
+border-top: 2px solid rgb(199, 199, 199);
+}
+div.hdrWrap ul.tab li.on{
+  background-color: #ffe373;
+}
+div.hdrWrap ul.tab li.on+li{
+  height: 160px;
+  background-color: #fffaf0;
+}
+div.hdrWrap ul.tab li.on+li>h5{
+  border-top: 2px solid rgb(231, 231, 231);
+}
+div.hdrWrap ul.tab li:nth-last-child(1){
+  margin-top: 500px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+div.hdrWrap ul.tab span{
+  font-size: 38px;
+  height: 50px;
+  float: left;
+}
+div.hdrWrap ul.tab li{
+  text-align: right;
+  width: 100%;
+  font-size: 23px;
+  line-height: 80px;
+  height: 80px;
+}
+div.hdrWrap ul.tab h5{
+  padding-right: 50px;
+}
+div.hdrWrap ul.tab h4:nth-child(2){
+  border-left: 1px solid #ccc;
+}
+div.hdrWrap ul.tab h4{
+  width: 50%;
+  float: left;
+  text-align: center;
+  background-color: rgb(56 77 59);
+  color: #fff;
+}
 div.hdrWrap>div.header>ul.nav{
-  width: calc(100% / 12 * 4);
+  width: calc(100% / 12 * 4.5);
   float: left;
   text-transform: uppercase;
   cursor: pointer;
@@ -45,8 +133,9 @@ div.hdrWrap>div.header>ul.nav>li{
   float: left;
   font-size: 19px;
   margin-right: 15px;
+  height: 50px;
+  overflow: hidden;
 }
-
 div.hdrWrap>div.header>ul.nav>li:hover::after{
   content: '';
   height: 5px;
@@ -80,7 +169,7 @@ div.hdrWrap>div.header>h1>a{
   margin: 0 auto;
 }
 div.hdrWrap>div.header>h1{
-  width: calc(100% / 12 * 4);
+  width: calc(100% / 12 * 3.5);
   font-size: 41px;
   float: left;
   text-transform: uppercase;
@@ -103,16 +192,16 @@ div.hdrWrap>div.header>ul.menu>li{
   margin-left: 3px;
   cursor: pointer;
   position: relative;
-
 }
 div.hdrWrap>div.header>ul.menu>li>div.box{
   width: 500%;
   height: 0px;
-  top: 66px;
+  top: 50px;
   left: -35px;
   overflow: hidden;
   position: absolute;
   padding: 10px 20px;
+  opacity: 0;
 }
 div.hdrWrap>div.header>ul.menu>li>div.box>h4{
   font-size: 14px;
@@ -128,12 +217,25 @@ div.hdrWrap>div.header>ul.menu>li:nth-child(2):hover>div.box{
   background-color: #fff;
   height: 115px;
   border: 1px solid #999;
+  opacity: 1;
 }
 div.hdrWrap>div.header>div.btn{
   display: none;
 }
 
 /* 컨텐츠 */
+.icon{
+  text-indent: -999px;
+  color: transparent;
+}
+.images{
+  text-indent: -999px;
+  color: transparent;
+}
+
+div.art.New{
+  display: none;
+}
 div.cntWrap{
   margin-top: 100px;
 }
@@ -167,12 +269,12 @@ div.cntWrap>div.content>div.header>div.btns>div{
 }
 div.cntWrap>div.content>div.header>div.btns>div.btn{
   background-color: #f8b551;
-  transition: all 0.5s;
+  transition: ackground-color 0.5s;
 }
 div.cntWrap>div.content>div.section{
   margin-top: 80px;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(1)~.article{
+div.cntWrap>div.content div.article:nth-child(1)~.article{
   margin-top: 80px;
   opacity: 0;
   transition: all 0.8s;
@@ -180,63 +282,61 @@ div.cntWrap>div.content>div.section>div.article:nth-child(1)~.article{
 
 /* 홀수번 아티클 */
 
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)::after{
+div.cntWrap>div.content div.article:nth-child(odd)::after{
   content: '';
   display: block;
   clear: both;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.texts{
+div.cntWrap>div.content div.article:nth-child(odd)>div.texts{
   float: left;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images{
+div.cntWrap>div.content div.article:nth-child(odd)>div.images{
   float: left;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.bgSml{
+div.cntWrap>div.content div.article:nth-child(odd)>div.images>div.bgSml{
   top: 180px;
   left: 0;
   
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.image{
+div.cntWrap>div.content div.article:nth-child(odd)>div.images>div.image{
   top: 20px;
   left: calc(100% / 9 * 0.5);
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.bgBig{
+div.cntWrap>div.content div.article:nth-child(odd)>div.images>div.bgBig{
   right: 0;
 }
  
-
-
 /* 짝수번 아티클 */
 
-div.cntWrap>div.content>div.section>div.article:nth-child(even)::after{
+div.cntWrap>div.content div.article:nth-child(even)::after{
   content: '';
   display: block;
   clear: both;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.texts{
+div.cntWrap>div.content div.article:nth-child(even)>div.texts{
   float: right;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images{
+div.cntWrap>div.content div.article:nth-child(even)>div.images{
   float: right;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images>div.bgSml{
+div.cntWrap>div.content div.article:nth-child(even)>div.images>div.bgSml{
   top: 180px;
   right: 0;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images>div.image{
+div.cntWrap>div.content div.article:nth-child(even)>div.images>div.image{
   top: 20px;
   right: calc(100% / 9 * 0.5);
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images>div.bgBig{
+div.cntWrap>div.content div.article:nth-child(even)>div.images>div.bgBig{
   right: calc(100% / 9 * 5.6);
 }
-div.cntWrap>div.content>div.section>div.article>div.texts{
+div.cntWrap>div.content div.article>div.texts{
   width: calc(100% / 12 * 3);
   text-align: center;
   margin-right: 40px;
   padding-bottom: 80px
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>h2{
+div.cntWrap>div.content div.article>div.texts>h2{
   font-size: 65px;
   line-height: 80px;
   font-weight: 700;
@@ -244,7 +344,7 @@ div.cntWrap>div.content>div.section>div.article>div.texts>h2{
   font-family: 'Lora';
       
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>h2::after{
+div.cntWrap>div.content div.article>div.texts>h2::after{
   width: 1px;
   height: 30px;
   background-color: #999;
@@ -253,7 +353,7 @@ div.cntWrap>div.content>div.section>div.article>div.texts>h2::after{
   margin: 0 auto;
 }
 
-div.cntWrap>div.content>div.section>div.article>div.texts>h4{
+div.cntWrap>div.content div.article>div.texts>h4{
   width: calc(100% / 3);
   outline: 1px solid #777;
   font-style: italic;
@@ -268,25 +368,25 @@ div.cntWrap>div.content>div.section>div.article>div.texts>h4{
   
   
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>h4:nth-child(2){
+div.cntWrap>div.content div.article>div.texts>h4:nth-child(2){
   margin-left: calc(100% / 3 * 0.45);
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>h4:nth-child(3){
+div.cntWrap>div.content div.article>div.texts>h4:nth-child(3){
   margin-left: 10px;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>h3{
+div.cntWrap>div.content div.article>div.texts>h3{
   margin-top: 50px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   font-family: 'Nanum Gothic Coding';
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>h5{
+div.cntWrap>div.content div.article>div.texts>h5{
   font-size: 14px;
   line-height: 20px;
   color: #777;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>p{
+div.cntWrap>div.content div.article>div.texts>p{
   font-size: 15px;
   line-height: 20px;
   height: 40px;
@@ -295,23 +395,23 @@ div.cntWrap>div.content>div.section>div.article>div.texts>p{
   font-family: 'Gowun Dodum';
   padding: 0px 5px;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(2)~div.article>div.texts>div.icons>div.icon{
+div.cntWrap>div.content div.article:nth-child(2)~div.article>div.texts>div.icons>div.icon{
   width: calc(100% / 2 - 8px);
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(2)~div.article>div.texts>div.icons{
+div.cntWrap>div.content div.article:nth-child(2)~div.article>div.texts>div.icons{
   padding: 0px 20px;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons{
+div.cntWrap>div.content div.article>div.texts>div.icons{
   width: calc(100% / 3 * 2);
   margin: 0 auto;
   margin-top: 20px;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons::after{
+div.cntWrap>div.content div.article>div.texts>div.icons::after{
   content: '';
   display: block;
   clear: both;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon{
   width: calc(100% / 3 - 8px);
   margin: 0 4px;
   background-color: #fff;
@@ -319,214 +419,210 @@ div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon{
   float: left;
 }
 /* 아이콘 */
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i1{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i1{
   background-image: url('../images/sub2_icon1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i2{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i2{
   background-image: url('../images/sub2_icon2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i3{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i3{
   background-image: url('../images/sub2_icon3.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i4{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i4{
   background-image: url('../images/sub2_icon4.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i5{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i5{
   background-image: url('../images/sub2_icon5.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i6{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i6{
   background-image: url('../images/sub2_icon3.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i7{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i7{
   background-image: url('../images/sub2_icon4.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i8{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i8{
   background-image: url('../images/sub2_icon3.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i9{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i9{
   background-image: url('../images/sub2_icon2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i10{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i10{
   background-image: url('../images/sub2_icon3.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i11{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i11{
   background-image: url('../images/sub2_icon2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.icons>div.icon.i12{
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i12{
   background-image: url('../images/sub2_icon3.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
-div.cntWrap>div.content>div.section>div.article>div.texts>div.btn{
+div.cntWrap>div.content div.article>div.texts>div.btn{
   margin-top: 20px;
   cursor: pointer;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.btn>span{
+div.cntWrap>div.content div.article>div.texts>div.btn>span{
   font-size: 14px;
   color: #777;
   line-height: 20px;
   font-weight: 700;
 }
-div.cntWrap>div.content>div.section>div.article>div.texts>div.btn>i{
+div.cntWrap>div.content div.article>div.texts>div.btn>i{
   line-height: 30px;
   color: #777;
   font-weight: 700;
 }
 
-div.cntWrap>div.content>div.section>div.article>div.images{
+div.cntWrap>div.content div.article>div.images{
   width: calc(100% / 12 * 9 - 40px);
   position: relative;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.bgSml{
+div.cntWrap>div.content div.art.New>div.article>div.images>div.bgSml{
+  background-color: #b8becc;
+}
+div.cntWrap>div.content div.article>div.images>div.bgSml{
   width: calc(100% / 9 * 6);
   height: 280px;
   background-color: #ddd8d6;
-  /* background-color: #f9eee3; */
   position: absolute;
   z-index: 3;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image{
+div.cntWrap>div.content div.article>div.images>div.image{
   width: calc(100% / 9 * 6.5);
   height: 400px;
-  background-color: #333;
   position: absolute;
   z-index: 3;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.bgBig{
+div.cntWrap>div.content div.article>div.images>div.bgBig{
   width: calc(100% / 9 * 3.5);
   position: absolute;
   z-index: 2;
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.bgBig>div.ovrGrid{
+div.cntWrap>div.content div.art.New>div.article>div.images>div.bgBig>div.ovrGrid{
+  background-color: #d7ebf7;
+}
+div.cntWrap>div.content div.article>div.images>div.bgBig>div.ovrGrid{
   width: calc((100vw - 1080px) / 2 + 100%);
+  min-width: calc((100vw - 80vw) / 2 + 100%);
   background-color: #fce6de;
   height: 480px;
-  
 }
-div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images>div.bgBig>div.ovrGrid{
-  width: calc((100vw - 1080px) / 2 + 100%);
-  margin-left: calc((100vw - 1080px) / -2 );
-  background-color: #fce6de;
-  height: 480px;
-  
+div.cntWrap>div.content div.article:nth-child(even)>div.images>div.bgBig>div.ovrGrid{
+  margin-left: min(calc((100vw - 1080px) / -2 ), calc((100vw - 80vw) / -2)) ;
 }
-
-
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i1{
-  background-image: url('../images/sub2_cntbg1.jpg');
+ .image{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i1::after{
+ .image.i1{
+  background-image: url('../images/sub2_cntbg1.jpg');
+}
+ .image::after{
   content: '';
   display: block;
   height: 100%;
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ .image.i1::after{
   background-image: url('../images/sub2_pd1.png');
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i2{
+ .image.i2{
   background-image: url('../images/sub2_cntbg2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i2::after{
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
+ .image.i2::after{
   background-image: url('../images/sub2_pd2.png');
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i3{
+ .image.i3{
   background-image: url('../images/sub2_cntbg3.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i3::after{
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
+ .image.i3::after{
   background-image: url('../images/sub2_pd3.png');
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i4{
+ .image.i4{
   background-image: url('../images/sub2_cntbg4.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i4::after{
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
+ .image.i4::after{
   background-image: url('../images/sub2_pd4.png');
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i5{
+ .image.i5{
   background-image: url('../images/sub2_cntbg5.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-div.cntWrap>div.content>div.section>div.article>div.images>div.image.i5::after{
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
+.image.i5::after{
   background-image: url('../images/sub2_pd5.png');
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.New .image.i1{
+  background-image: url('../images/sub2_cntbg3.jpg');
+}
+.New .image.i1::after{
+  background-image: url('../images/sub2_pd3.png');
+}
+.New .image.i2{
+  background-image: url('../images/sub2_cntbg4.jpg');
+}
+ .New .image.i2::after{
+  background-image: url('../images/sub2_pd4.png');
+}
+ .New .image.i3{
+  background-image: url('../images/sub2_cntbg5.jpg');
+}
+ .New .image.i3::after{
+  background-image: url('../images/sub2_pd5.png');
+}
+.New .image.i4{
+  background-image: url('../images/sub2_cntbg1.jpg');
+}
+ .New .image.i4::after{
+  background-image: url('../images/sub2_pd1.png');
+}
+ .New .image.i5{
+  background-image: url('../images/sub2_cntbg2.jpg');
+}
+ .New .image.i5::after{
+  background-image: url('../images/sub2_pd2.png');
 }
 
 
@@ -584,7 +680,7 @@ div.ftrWrap>div.footer>div.ftrLeft>h4:nth-last-child(2){
   margin-top: 20px;
 }
 div.ftrWrap>div.footer>div.ftrRight{
-  width: calc(100% / 12 * 2);
+  width: calc(100% / 12 * 2.5);
   float: right;
 }
 div.ftrWrap>div.footer>div.ftrRight>div.sns{
@@ -603,4 +699,37 @@ div.ftrWrap>div.footer>div.ftrRight>select{
   text-align: center;
   text-transform: capitalize;
   cursor: pointer;
+}
+
+/* 탑버튼 */
+div.toTop{
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255 204 0);
+  z-index: 6;
+  line-height: 70px;
+  font-size: 48px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+div.toTop.pop{
+  animation-name: pop;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes pop{
+  0%{
+    bottom : 40px
+  }
+  50%{
+    bottom : 70px
+  }
+  100%{
+    bottom : 40px
+  }
 }

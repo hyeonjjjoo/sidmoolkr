@@ -3,16 +3,19 @@ div.hdrWrap>div.header{
   width: 90%;
 }
 div.hdrWrap>div.header>h1{
-  text-align: right;
-  width: calc(100% / 4 * 3);
-  padding-right: 20px;
+  width: calc(100% / 4 * 2);
+}
+div.hdrWrap ul.tab{
+  padding: 0px 20px;
+}
+div.hdrWrap ul.tab h1{
+  font-size: 32px;
+}
+div.hdrWrap ul.tab li{
+  font-size: 18px;
 }
 
 /* 배너 */
-
-div.bnrWrap{
-  margin-top: 0px;
-}
 div.bnrWrap>div.banner{
   width: 90%;
 }
@@ -20,7 +23,6 @@ div.bnrWrap>div.banner::before{
   height: 240px;
   margin-left: min(calc((100vw - 420px) / -2),calc((100vw - 90vw) / -2));
 }
-
 div.bnrWrap>div.banner>div.texts{
   padding-bottom: 20px;
   width: calc(100% - 20px)

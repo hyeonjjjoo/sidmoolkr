@@ -1,34 +1,27 @@
   
-  /* 헤더1 */
+    /* 헤더1 */
   div.hdrWrap>div.header {
     width: 90%;
     max-width: 700px;
     padding: 0;
   }
-  div.hdrWrap>div.header::after{
-    content: '';
-    display: block;
-    clear: both;
-  }
   div.hdrWrap>div.header>h1{
-    line-height: 80px;
+    height: 80px;
   }
   div.hdrWrap>div.header>ul.nav{
     display: none;
   }
-  
+  div.hdrWrap>div.header>ul.menu{
+    display: none;
+  }
   div.hdrWrap>div.header>div.btn{
     display: block;
     font-size: 40px;
     line-height: 80px;
     float: right;
-
   }
 
   /* 컨텐츠 */
-  div.cntWrap{
-      margin-top: 40px;
-  }
   div.cntWrap>div.content{
       width: 90%;
       max-width: 700px;
@@ -36,134 +29,128 @@
   div.cntWrap>div.content>div.header>div.btns{
     width: calc(100% / 8 * 4);
   }
-  div.cntWrap>div.content>div.header>div.btns>div.btn{
+  div.cntWrap>div.content>div.header>div.btns>div{
     height: 60px;
     font-size: 30px;
     line-height: 60px;
   }
-  div.cntWrap>div.content>div.section>div.article{
+  div.cntWrap>div.content>div.section div.article{
     margin-top: 40px;
     height: 780px; 
-    
     position: relative;
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts{
+  div.cntWrap>div.content>div.section div.article>div.texts{
     width: 100%;
     position: absolute;
     bottom: 0;
     padding-bottom: 20px;
-    
   }
-  
-  div.cntWrap>div.content>div.section>div.article>div.texts>h2{
+  div.cntWrap>div.content>div.section div.article>div.texts>h2{
     font-size: 50px;
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>h2::after{
+  div.cntWrap>div.content>div.section div.article>div.texts>h2::after{
     display: none;
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>h3{
+  div.cntWrap>div.content>div.section div.article>div.texts>h3{
     margin-top: 20px;
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>h4{
+  div.cntWrap>div.content>div.section div.article>div.texts>h4{
     display: none;
   }
   div.cntWrap>div.content>div.section>div.article>div.texts>h5{
     margin-top: 10px;
 
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>p{
+  div.cntWrap>div.content>div.section div.article>div.texts>p{
     width: calc(100% / 8 * 3.5);
     margin: 0 auto;
     margin-top: 20px;
     font-weight: 700;
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>div.icons{
+  div.cntWrap>div.content>div.section div.article>div.texts>div.icons{
     width: calc(100% / 8 * 2.5);
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(2)~div.article>div.texts>div.icons>div.icon{
+  div.cntWrap>div.content>div.section div.article:nth-child(2)~div.article>div.texts>div.icons>div.icon{
     margin-left: calc(100% / 8 * 0.8);
     width: calc(100% / 8 * 2.5);
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>div.btn>span{
+  div.cntWrap>div.content>div.section div.article>div.texts>div.btn>span{
     font-size: 20px;
   }
-  div.cntWrap>div.content>div.section>div.article>div.texts>div.btn>i{
+  div.cntWrap>div.content>div.section div.article>div.texts>div.btn>i{
     font-size: 20px;
   }
-  div.cntWrap>div.content>div.section>div.article>div.images{
+  div.cntWrap>div.content>div.section div.article>div.images{
     width: 100%;
     position: inherit;
     position: absolute;
     top: 0;
   }
-  div.cntWrap>div.content>div.section>div.article>div.images>div.image{
+  div.cntWrap>div.content>div.section div.article>div.images>div.image{
     width: 100%;
     position: inherit;
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.texts{
+  div.cntWrap>div.content>div.section div.article:nth-child(odd)>div.texts{
     float: none;
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images{
+  div.cntWrap>div.content>div.section div.article:nth-child(odd)>div.images{
     float: none;
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(odd)>div.images>div.image{
+  div.cntWrap>div.content>div.section div.article:nth-child(odd)>div.images>div.image{
     top: 0;
     left: 0;
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.texts{
+  div.cntWrap>div.content>div.section div.article:nth-child(even)>div.texts{
     float: none;
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images{
+  div.cntWrap>div.content>div.section div.article:nth-child(even)>div.images{
     float: none;
   }
-  div.cntWrap>div.content>div.section>div.article:nth-child(even)>div.images>div.image{
+  div.cntWrap>div.content>div.section div.article:nth-child(even)>div.images>div.image{
     top: 0;
     left: 0;
   }
-  
-  div.cntWrap>div.content>div.section>div.article>div.images>div.bgSml{
+  div.cntWrap>div.content>div.section div.article>div.images>div.bgSml{
       display: none;
   }
-  div.cntWrap>div.content>div.section>div.article>div.images>div.bgBig{
+  div.cntWrap>div.content>div.section div.article>div.images>div.bgBig{
       display: none;
   }
 
 
 /* 푸터 */
- div.ftrWrap{
-    margin-top: 40px;
-  }
-  
-  div.ftrWrap>div.footer{
-    width: 90%;
-    max-width: 700px;
-    padding-bottom: 80px;
-  }
-  
-  div.ftrWrap>div.footer>div.ftrLeft{
-    width: 100%;
-    text-align: center;
-    float: none;
-  }
-  div.ftrWrap>div.footer>div.ftrLeft>ul.nav{
-    display: none;
-  }
-  
-  div.ftrWrap>div.footer>div.ftrLeft>h1{
-    font-size: 25px;
-  }
-  
-  div.ftrWrap>div.footer>div.ftrLeft>h4:nth-last-child(2){
-    display: none;
-  }
-  div.ftrWrap>div.footer>div.ftrLeft>h4{
-    margin-top: 60px;
-    font-size: 12px;
-  }
-  
-  div.ftrWrap>div.footer>div.ftrRight{
-    width: 100%;
-    text-align: center;
-    float: none;
-    margin-top: -70px;
-  }
+div.ftrWrap{
+  margin-top: 40px;
+}
+div.ftrWrap>div.footer{
+  width: 90%;
+  max-width: 700px;
+  padding-bottom: 80px;
+}
+div.ftrWrap>div.footer>div.ftrLeft{
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+div.ftrWrap>div.footer>div.ftrLeft>ul.nav{
+  display: none;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h1{
+  font-size: 25px;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h4:nth-last-child(2){
+  display: none;
+}
+div.ftrWrap>div.footer>div.ftrLeft>h4{
+  margin-top: 60px;
+  font-size: 12px;
+}
+div.ftrWrap>div.footer>div.ftrRight{
+  width: 100%;
+  text-align: center;
+  float: none;
+  margin-top: -70px;
+}
+div.ftrWrap>div.footer>div.ftrRight>select{
+  display: none;
+}
