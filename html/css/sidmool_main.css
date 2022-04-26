@@ -242,15 +242,9 @@ div.mainWrap>div.main>div.mainGroup>div.image{
   float: left;
   position: relative;
 }
-div.mainWrap>div.main>div.mainGroup>div.image.i2>div.txt{
-  position: absolute;
-  left: calc(100% / 12 * 1.5 );
-  top: 199px;
-}
-div.mainWrap>div.main>div.mainGroup>div.image.i2 h5{
-  text-align: left;
-}
 div.mainWrap>div.main>div.mainGroup>div.image>div.txt{
+  width: calc(100%/ 12 * 6);
+  text-align: right;
   position: absolute;
   right: calc(100% / 12 * 2 );
   bottom: 150px;
@@ -265,26 +259,18 @@ div.mainWrap>div.main>div.mainGroup>div.image h5{
   font-size: 22px;
   line-height: 40px;
   height: 120px;
-  text-align: right;
   margin-top: 20px;
   font-family: 'Nanum Gothic';
 }
-div.mainWrap>div.main>div.mainGroup>div.image:nth-child(2)>div.btn{
-  margin-right: auto;
-}
 div.mainWrap>div.main>div.mainGroup>div.image.i1 div.btn{
   margin-left: auto;
-}
-div.mainWrap>div.main>div.mainGroup>div.image.i2 div.btn{
-  margin-right: auto;
-  width: calc(100% / 12 * 3.1);
 }
 div.mainWrap>div.main>div.mainGroup>div.image div.btn>a{
   transition: color 0.5s;
 }
 div.mainWrap>div.main>div.mainGroup>div.image div.btn{
   border-radius: 25px;
-  width: calc(100% / 12 * 5);
+  width: calc(100% / 12 * 2.5);
   font-size: 21px;
   line-height: 43px;
   height: 45px;
@@ -297,7 +283,7 @@ div.mainWrap>div.main>div.mainGroup>div.image div.btn{
 div.mainWrap>div.main>div.mainGroup>div.image div.btn:hover{
   background-color: #554c54;;
 }
-div.mainWrap>div.main>div.mainGroup>div.image div.btn:hover h4{
+div.mainWrap>div.main>div.mainGroup>div.image div.btn:hover a{
   color: #fff;
 }
 div.mainWrap>div.main>div.mainGroup>div.image.i1{
@@ -305,6 +291,15 @@ div.mainWrap>div.main>div.mainGroup>div.image.i1{
 }
 div.mainWrap>div.main>div.mainGroup>div.image.i2{
   background-image: url('../images/2.jpg');
+}
+div.mainWrap>div.main>div.mainGroup>div.image.i2 div.btn{
+  margin-right: auto;
+}
+div.mainWrap>div.main>div.mainGroup>div.image.i2>div.txt{
+  position: absolute;
+  left: calc(100% / 12 * 1.5 );
+  top: 199px;
+  text-align: left;
 }
 div.mainWrap>div.main>div.btns{
   width: 80%;
