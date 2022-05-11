@@ -90,7 +90,7 @@ $(function(){
     var i = 0;
     var tli = $('.content.cnt01 ul.tab>li');
     var li = $('.content.cnt01 ul.paging>li');
-    var artGroup = $('.content.cnt01 .artGroup');
+    var articles = $('.content.cnt01 .articles');
     var len = $('.articles').length
     var wd = $(window).width();
     var num = 0;
@@ -104,15 +104,15 @@ $(function(){
     
     tli.click(function(){
         var ind = $(this).index();
-        $('.content.cnt01 .articles').css({width:'0'});
-        $('.content.cnt01 .articles').find('.article').css({
+        articles.css({width:'0'});
+        articles.find('.article').css({
             width:'0',
             opacity : '0'
         });
-        $('.content.cnt01 .articles').eq(ind).css({
+        articles.eq(ind).css({
             width:'calc(100% / 4 )'
         });
-        $('.content.cnt01 .articles').eq(ind).find('.article').css({
+        articles.eq(ind).find('.article').css({
             width:'calc(100% / ' + num + ' - 10px)',
             opacity : '1'
         });
@@ -131,13 +131,13 @@ $(function(){
         li.removeClass('on');
         $(this).addClass('on');
         
-        $('.content.cnt01 .articles').css({width:'0'});
-        $('.content.cnt01 .articles').find('.article').css({
+        articles.css({width:'0'});
+        articles.find('.article').css({
             width:'0',
             opacity : '0'
         });
-        $('.content.cnt01 .articles').eq(ind).css({width:'calc(100% / 4 )'});
-        $('.content.cnt01 .articles').eq(ind).find('.article').css({
+        articles.eq(ind).css({width:'calc(100% / 4 )'});
+        articles.eq(ind).find('.article').css({
             width:'calc(100% / ' + num + ' - 10px)',
             opacity : '1'
         });
@@ -151,13 +151,13 @@ $(function(){
         i--
         i = (len+i)%len;
         
-        $('.content.cnt01 .articles').css({width:'0'});
-        $('.content.cnt01 .articles').find('.article').css({
+        articles.css({width:'0'});
+        articles.find('.article').css({
             width:'0',
             opacity : '0'
         });
-        $('.content.cnt01 .articles').eq(i).css({width:'calc(100% / 4 )'});
-        $('.content.cnt01 .articles').eq(i).find('.article').css({
+        articles.eq(i).css({width:'calc(100% / 4 )'});
+        articles.eq(i).find('.article').css({
             width:'calc(100% / ' + num + ' - 10px)',
             opacity : '1'
         });
@@ -172,13 +172,13 @@ $(function(){
         i++
         i = i%len
         
-        $('.content.cnt01 .articles').css({width:'0'});
-        $('.content.cnt01 .articles').find('.article').css({
+        articles.css({width:'0'});
+        articles.find('.article').css({
             width:'0',
             opacity : '0'
         });
-        $('.content.cnt01 .articles').eq(i).css({width:'calc(100% / 4 )'});
-        $('.content.cnt01 .articles').eq(i).find('.article').css({
+        articles.eq(i).css({width:'calc(100% / 4 )'});
+        articles.eq(i).find('.article').css({
             width:'calc(100% / ' + num + ' - 10px)',
             opacity : '1'
         });

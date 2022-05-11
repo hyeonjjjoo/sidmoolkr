@@ -20,6 +20,9 @@ div.hdrWrap ul.tab li{
 div.mainWrap>div.main>div.mainGroup {
   height: 350px;
 }
+div.mainWrap>div.main>div.mainGroup>div.image>div.txt{
+  width: calc(100%/ 12 * 9);
+}
 div.mainWrap>div.main>div.mainGroup>div.image {
   height: 350px;
 }
@@ -46,9 +49,7 @@ div.mainWrap>div.main>div.mainGroup>div.image.i2>div.txt{
 div.mainWrap>div.main>div.btns{
   display: none;
 }
-div.mainWrap>div.main>div.mainGroup>div.image.i2 div.btn{
-  width: calc(100% / 12 * 4.2);
-}
+
 
 
 /* 컨텐츠 공통 */
