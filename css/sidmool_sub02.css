@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lora&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oooh+Baby&family=Work+Sans:wght@300&display=swap');
 
-
 body{
     overflow-x: hidden;
     position: relative;
@@ -368,24 +367,18 @@ div.cntWrap>div.content.cnt01>div.section>div.article:nth-child(2){
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image{
   height: 240px;
   background-color: rgb(255, 255, 255);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i1{
    background-image: url('../images/sub_cnt1.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i2{
    background-image: url('../images/sub_cnt2.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.image.i3{
    background-image: url('../images/sub_cnt3.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.texts{
   text-align: center;
@@ -406,7 +399,6 @@ div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>p{
 }
 
 /* 컨텐츠2 */
-
 div.cntWrap>div.content.cnt02>div.header>p{
   margin: 0 auto;
   width: calc(100% / 12 * 10);
@@ -416,7 +408,6 @@ div.cntWrap>div.content.cnt02>div.header>p{
   margin-top: 20px;
   font-family: 'Gowun Dodum';
 }
-
 div.cntWrap>div.content.cnt02>div.section>div.article{
   width: 100%;
 }
@@ -432,20 +423,17 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
   width: 50%;
   height: 360px;
   background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i1{
   float: left;
   background-image: url('../images/sub_cnt4.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i2{
   float: right;
   background-image: url('../images/sub_cnt5.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
   width: 50%;
@@ -540,7 +528,7 @@ div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i3{
 }
 div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i4{
    background-image: url('../images/sub_cnt9.jpg');
-  background-position: top;
+   background-position: top;
 }
 div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i5{
    background-image: url('../images/sub_cnt10.jpg');
@@ -554,7 +542,6 @@ div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
   padding: 5px 10px 40px 0px;
   font-family: 'Nanum Gothic Coding';
 }
-
 div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h3{
   font-size: 20px;
   font-weight: 700;

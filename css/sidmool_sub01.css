@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lora&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oooh+Baby&family=Work+Sans:wght@300&display=swap');
 
-
 body{
     overflow-x: hidden;
     position: relative;
@@ -232,7 +231,6 @@ div.hdrWrap>div.header>div.btn{
   text-indent: -999px;
   color: transparent;
 }
-
 div.art.New{
   display: none;
 }
@@ -244,7 +242,6 @@ div.cntWrap>div.content{
   max-width: 1080px;
   margin: 0 auto;
 }
-
 div.cntWrap>div.content>div.header>div.btns{
   width: calc(100% / 12 * 2);
   margin: 0 auto;
@@ -279,7 +276,6 @@ div.cntWrap>div.content div.article:nth-child(1)~.article{
   opacity: 0;
   transition: all 0.8s;
 }
-
 /* 홀수번 아티클 */
 
 div.cntWrap>div.content div.article:nth-child(odd)::after{
@@ -296,7 +292,6 @@ div.cntWrap>div.content div.article:nth-child(odd)>div.images{
 div.cntWrap>div.content div.article:nth-child(odd)>div.images>div.bgSml{
   top: 180px;
   left: 0;
-  
 }
 div.cntWrap>div.content div.article:nth-child(odd)>div.images>div.image{
   top: 20px;
@@ -307,7 +302,6 @@ div.cntWrap>div.content div.article:nth-child(odd)>div.images>div.bgBig{
 }
  
 /* 짝수번 아티클 */
-
 div.cntWrap>div.content div.article:nth-child(even)::after{
   content: '';
   display: block;
@@ -342,7 +336,6 @@ div.cntWrap>div.content div.article>div.texts>h2{
   font-weight: 700;
   font-style: italic;
   font-family: 'Lora';
-      
 }
 div.cntWrap>div.content div.article>div.texts>h2::after{
   width: 1px;
@@ -365,8 +358,6 @@ div.cntWrap>div.content div.article>div.texts>h4{
   font-family: 'Gowun Dodum';
   height: 20px;
   overflow: hidden;
-  
-  
 }
 div.cntWrap>div.content div.article>div.texts>h4:nth-child(2){
   margin-left: calc(100% / 3 * 0.45);
@@ -419,79 +410,47 @@ div.cntWrap>div.content div.article>div.texts>div.icons>div.icon{
   float: left;
 }
 /* 아이콘 */
-div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i1{
-  background-image: url('../images/sub2_icon1.png');
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon{
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i1{
+  background-image: url('../images/sub2_icon1.png');
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i2{
   background-image: url('../images/sub2_icon2.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i3{
   background-image: url('../images/sub2_icon3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i4{
   background-image: url('../images/sub2_icon4.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i5{
   background-image: url('../images/sub2_icon5.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i6{
   background-image: url('../images/sub2_icon3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i7{
   background-image: url('../images/sub2_icon4.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i8{
   background-image: url('../images/sub2_icon3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i9{
   background-image: url('../images/sub2_icon2.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i10{
   background-image: url('../images/sub2_icon3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i11{
   background-image: url('../images/sub2_icon2.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 div.cntWrap>div.content div.article>div.texts>div.icons>div.icon.i12{
   background-image: url('../images/sub2_icon3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-
 div.cntWrap>div.content div.article>div.texts>div.btn{
   margin-top: 20px;
   cursor: pointer;
@@ -507,7 +466,6 @@ div.cntWrap>div.content div.article>div.texts>div.btn>i{
   color: #777;
   font-weight: 700;
 }
-
 div.cntWrap>div.content div.article>div.images{
   width: calc(100% / 12 * 9 - 40px);
   position: relative;
@@ -545,55 +503,50 @@ div.cntWrap>div.content div.article>div.images>div.bgBig>div.ovrGrid{
 div.cntWrap>div.content div.article:nth-child(even)>div.images>div.bgBig>div.ovrGrid{
   margin-left: min(calc((100vw - 1080px) / -2 ), calc((100vw - 80vw) / -2)) ;
 }
- .image{
+.image{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
- .image.i1{
-  background-image: url('../images/sub2_cntbg1.jpg');
-}
- .image::after{
+.image::after{
   content: '';
   display: block;
   height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+ .image.i1{
+  background-image: url('../images/sub2_cntbg1.jpg');
 }
  .image.i1::after{
   background-image: url('../images/sub2_pd1.png');
-  background-size: contain;
 }
  .image.i2{
   background-image: url('../images/sub2_cntbg2.jpg');
 }
  .image.i2::after{
   background-image: url('../images/sub2_pd2.png');
-  background-size: contain;
 }
  .image.i3{
   background-image: url('../images/sub2_cntbg3.jpg');
 }
  .image.i3::after{
   background-image: url('../images/sub2_pd3.png');
-  background-size: contain;
 }
  .image.i4{
   background-image: url('../images/sub2_cntbg4.jpg');
 }
  .image.i4::after{
   background-image: url('../images/sub2_pd4.png');
-  background-size: contain;
 }
  .image.i5{
   background-image: url('../images/sub2_cntbg5.jpg');
 }
 .image.i5::after{
   background-image: url('../images/sub2_pd5.png');
-  background-size: contain;
 }
-
 .New .image.i1{
   background-image: url('../images/sub2_cntbg3.jpg');
 }

@@ -913,86 +913,40 @@ div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image:hover{
   background-color: #ffc592;
   background-size: cover;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i1{
-  background-image: url('../images/icon1.png');
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image{
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i1:hover{
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image:hover{
   background-size: cover; 
+}
+div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i1{
+  background-image: url('../images/icon1.png');
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i2{
   background-image: url('../images/icon2.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i2:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i3{
   background-image: url('../images/icon3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i3:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i4{
   background-image: url('../images/icon4.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i4:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i5{
   background-image: url('../images/icon5.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i5:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i6{
   background-image: url('../images/icon6.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i6:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i7{
   background-image: url('../images/icon7.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i7:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i8{
   background-image: url('../images/icon8.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i8:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i9{
   background-image: url('../images/icon9.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-div.cntWrap>div.content.cnt03>div.header>ul.tab>li>div.image.i9:hover{
-  background-size: cover; 
 }
 div.cntWrap>div.content.cnt03>div.header>ul.tab>li>h5{
   text-align: center;
@@ -1072,7 +1026,6 @@ div.cntWrap>div.content.cnt03>div.section div.article>div.image.i15{
 div.cntWrap>div.content.cnt03>div.section div.article>div.image.i16{
   background-image: url('../images/sub2_pd5.png');
 }
-
 
 div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
   padding: 25px 30px 20px;
@@ -1167,7 +1120,6 @@ div.bnrWrap.bnrWrap03>div.banner.bnr03>div.image{
   background-position: center;
   background-repeat: no-repeat;
 }
-
 div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts{
   width: 40%;
   background-color: rgb(239 232 227);
@@ -1176,7 +1128,6 @@ div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts{
   padding: 80px calc(100% / 12 * 0.5);
   height: 360px;
   font-family: 'Gowun Dodum';
-  
 }
 div.bnrWrap.bnrWrap03>div.banner.bnr03>div.texts>p{
   font-size: 17px;

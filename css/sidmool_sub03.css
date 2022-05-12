@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lora&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oooh+Baby&family=Work+Sans:wght@300&display=swap');
 
-
 body{
     overflow-x: hidden;
     position: relative;
@@ -223,7 +222,6 @@ div.hdrWrap>div.header>div.btn{
   display: none;
 }
 
-
 /* 메인 */
 div.mainWrap{
   margin-top: 80px;
@@ -260,14 +258,12 @@ div.mainWrap>div.main>div.image::after{
     position: absolute;
     z-index: -1;
     right: calc(100% / 12 * 1.5);
-
 }
 div.mainWrap>div.main>div.texts{
     color: #fff;
     margin-top: -480px;
     padding: 80px calc(100% / 12 * 0.8);
-    font-family: 'Work Sans';
-    
+    font-family: 'Work Sans';   
 }
 div.mainWrap>div.main>div.texts>h2{
     font-size: 65px;
@@ -329,7 +325,6 @@ div.cntWrap>div.content.cnt01>div.header>p{
     margin: 0 auto;
     margin-top: 40px;
     font-family: 'Nanum Gothic Coding';
-    
 }
 
 div.cntWrap>div.content.cnt01>div.section>div.artTop{
@@ -350,31 +345,21 @@ div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article{
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image{
     margin: 0px 10px;
     height: 120px;
-   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i1{
     background-image: url('../images/sub3_cnt1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i2{
     background-image: url('../images/sub3_cnt2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i3{
     background-image: url('../images/sub3_cnt3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i4{
     background-image: url('../images/sub3_cnt4.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts{
     margin-top: 10px;
@@ -406,34 +391,25 @@ div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image::befo
     position: absolute;
     top: 45px;
     left: -78px;
-
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image{
     width: calc(100% / 4 * 3.5);
     margin-right: auto;
     height: 480px;
-   
     position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i1{
     background-image: url('../images/sub3_cnt5.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i2{
     background-image: url('../images/sub3_cnt6.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i3{
     background-image: url('../images/sub3_cnt7.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>h3{
     font-size: 16px;
     line-height: 40px;
@@ -492,7 +468,6 @@ div.cntWrap>div.content.cnt02>div.image{
     width: 50%;
     height: 400px;
     float: left;
-    
     font-weight: 700;
     background-image: url('../images/sub3_cnt8.jpg');
     background-position: center;
@@ -540,6 +515,9 @@ div.cntWrap>div.content.cnt02>div.image{
     float: left;
     border-radius: 10px;
     position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   div.cntWrap>div.content.cnt04>div.section>div.article>div.image>iframe{
     width: 100%;
@@ -573,27 +551,15 @@ div.cntWrap>div.content.cnt02>div.image{
   }
   div.cntWrap>div.content.cnt04>div.section>div.article>div.image.i1{
     background-image: url('../images/thumb1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   div.cntWrap>div.content.cnt04>div.section>div.article>div.image.i2{
     background-image: url('../images/thumb2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   div.cntWrap>div.content.cnt04>div.section>div.article>div.image.i3{
     background-image: url('../images/thumb3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   div.cntWrap>div.content.cnt04>div.section>div.article>div.image.i4{
     background-image: url('../images/thumb4.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
 /* 배너 */
@@ -647,7 +613,6 @@ div.bnrWrap>div.banner div.texts{
     color: #fff;
     height: 480px;
     padding: 120px 10px;
-    
 }
 div.bnrWrap>div.banner>div.bnrGroup>div.bnr02>div.image{
     background-image: url('../images/sub3_bnr2.jpg');
@@ -703,7 +668,6 @@ div.bnrWrap>div.banner div.texts>div.btn{
     right: 0;
     cursor: pointer;
 }
-
 div.bnrWrap>ul.paging{
     min-width: calc(100% / 12 * 0.3);
     width: calc(100% / 12 * 0.5);
@@ -724,7 +688,6 @@ div.bnrWrap>ul.paging>li.on{
     width: 16px;
     background: #000;
 }
-
 
 /* 푸터 */
 div.ftrWrap{
