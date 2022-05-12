@@ -128,11 +128,13 @@ div.cntWrap>div.content.cnt01>div.section>div.artRight::after{
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight>div.artView{
   height: 480px;
+  width: 100%;
+  min-width: inherit;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article{
   width: calc(100% / 2 - 10px);
 }
-div.cntWrap>div.content.cnt01>div.section>div.artRight>div.btns{
+div.cntWrap>div.content.cnt01>div.section>div.artRight div.btns{
   display: none;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artRight div.articles>div.article:nth-child(2)~div.article{
@@ -253,6 +255,9 @@ div.cntWrap>div.content.cnt03>div.section div.article:nth-child(15){
 }
 div.cntWrap>div.content.cnt03>div.section div.article>div.image{
   height: 400px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.btns{
+  display: none;
 }
 div.cntWrap>div.content.cnt03>div.section>ul.paging {
   min-width: calc(100% / 8 * 0.8);

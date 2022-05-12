@@ -59,7 +59,6 @@
   }
   div.cntWrap>div.content>div.section>div.article>div.texts>h5{
     margin-top: 10px;
-
   }
   div.cntWrap>div.content>div.section div.article>div.texts>p{
     width: calc(100% / 8 * 3.5);

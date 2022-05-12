@@ -89,14 +89,12 @@ $(function(){
         $('li.on').find('span').text('-');
     });
 
-
-    // 헤더 버튼
+    // 탭 메뉴
     var btn = $('.cntWrap .btns>div')
     btn.click(function(){
         btn.removeClass('btn');
         $(this).addClass('btn');
     });
-
     btn.eq(0).click(function(){
         $('div.art.New').css({
             display : 'none'

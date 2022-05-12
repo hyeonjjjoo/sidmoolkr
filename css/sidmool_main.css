@@ -31,7 +31,7 @@ div.hdrWrap>div.header::after{
   clear: both;
 }
 
-/* 헤더 사이드슬라이드 */
+/* 햄버거메뉴 */
 div.hdrWrap ul.tab{
   display: block;
   position: absolute;
@@ -241,6 +241,9 @@ div.mainWrap>div.main>div.mainGroup>div.image{
   background-size: cover;
   float: left;
   position: relative;
+}
+div.mainWrap>div.main>div.mainGroup>div.image>h4{
+  text-indent: -9999px;
 }
 div.mainWrap>div.main>div.mainGroup>div.image>div.txt{
   width: calc(100%/ 12 * 6);
